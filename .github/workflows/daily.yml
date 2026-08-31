@@ -203,12 +203,20 @@ jobs:
 
       - name: Summary
         if: always()
+        # 注意：job.status 不能直接 inline 在 run 块里（GitHub Actions 模板解析会报
+        # Unrecognized named-value）。必须先通过 env 传入，再在 shell 里用 $JOB_STATUS。
+        env:
+          JOB_STATUS: ${{ job.status }}
+          EVENT_NAME: ${{ github.event_name }}
         run: |
-          echo "### 每日复盘发布结果" >> "$GITHUB_STEP_SUMMARY"
-          echo "" >> "$GITHUB_STEP_SUMMARY"
-          echo "- 触发方式：${{ github.event_name }}" >> "$GITHUB_STEP_SUMMARY"
-          echo "- 数据源：免费公开源（无需 token）" >> "$GITHUB_STEP_SUMMARY"
-          echo "- 状态：${{ job.status }}" >> "$GITHUB_STEP_SUMMARY"
+          set -e
+          {
+            echo "### 每日复盘发布结果"
+            echo ""
+            echo "- 触发方式：${EVENT_NAME}"
+            echo "- 数据源：免费公开源（无需 token）"
+            echo "- 状态：${JOB_STATUS:-unknown}"
+          } >> "$GITHUB_STEP_SUMMARY"
 
   # 盘中切片 job：每 10 分钟跑一次 watch-slice，生成 intraday_runtime.json 并增量发布到 gh-pages。
   # 独立于 daily job，即便 daily 当天未跑，盘中六维参考温度/情绪分/盘中轨迹仍可工作。
@@ -326,6 +334,16 @@ jobs:
 
       - name: Summary
         if: always()
-分钟 / 手动）" >> "$GITHUB_STEP_SUMMARY"
-          echo "- 数据源：免费公开源（东方财富/腾讯，无需 token）" >> "$GITHUB_STEP_SUMMARY"
-          echo "- 状态：${{ job.status }}" >> "$GITHUB_STEP_SUMMARY"
+        # 同样：job.status 不能直接 inline 在 run 块里，用 env 传入。
+        env:
+          JOB_STATUS: ${{ job.status }}
+          EVENT_NAME: ${{ github.event_name }}
+        run: |
+          set -e
+          {
+            echo "### 盘中切片发布结果"
+            echo ""
+            echo "- 触发方式：${EVENT_NAME}（cron 每 10 分钟 / 手动）"
+            echo "- 数据源：免费公开源（东方财富/腾讯，无需 token）"
+            echo "- 状态：${JOB_STATUS:-unknown}"
+          } >> "$GITHUB_STEP_SUMMARY"
