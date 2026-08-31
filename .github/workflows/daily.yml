@@ -1,0 +1,186 @@
+name: Daily Review
+
+# 每日收盘后跑完整复盘流水线并发布到 GitHub Pages。
+# 设计目标：仓库根目录只需要两个文件 —— 本文件(.github/workflows/daily.yml) + quant-review-src.txt(项目压缩包)。
+#   - 全程走免费公开数据源 QR_DATA_SOURCE=free，无需任何 token / 密钥
+#   - 解压 quant-review-src.txt 后直接跑 ./qr.sh fetch（含 Vue 前端构建）
+#   - 产出与本地 ./qr.sh fetch 完全一致：完整指标 + 完整 Vue 页面
+# 触发：北京时间 15:40（UTC 07:40，周一至周五）自动跑；也可在 Actions 页面手动 Run workflow。
+
+on:
+  schedule:
+    # GitHub 的 schedule cron 一律按 UTC 执行，且不支持 timezone 字段。
+    # UTC 07:40 = 北京时间 15:40（收盘后 10 分钟，等数据源刷新完毕）
+    - cron: "40 7 * * 1-5"
+  workflow_dispatch:
+    inputs:
+      date10:
+        description: "指定交易日 YYYY-MM-DD，留空则自动判断"
+        required: false
+        default: ""
+        type: string
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-review
+  cancel-in-progress: false
+
+env:
+  QR_DATA_SOURCE: free
+  TZ: Asia/Shanghai
+
+jobs:
+  daily:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: 解压源码（quant-review-src.txt 是 gzip 压缩包）
+        run: |
+          set -euo pipefail
+          echo "=== 解压前根目录 ==="
+          ls -la
+          tar -xzf quant-review-src.txt
+          echo "=== 解压后根目录 ==="
+          ls -la
+          echo "=== qr.sh 是否就位 ==="
+          test -x ./qr.sh && echo "qr.sh OK" || echo "qr.sh 缺失"
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install Python deps
+        run: |
+          python3 -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Install web deps
+        run: cd web && npm ci
+
+      # 流水线依赖历史缓存计算 7 日趋势、连板高度趋势等指标。
+      # 缓存目录被 .gitignore 忽略，不会进入仓库，只能靠 Actions 缓存在运行间传递。
+      - name: Restore data cache
+        uses: actions/cache@v4
+        with:
+          path: |
+            cache
+            cache_online
+          key: qr-data-${{ github.run_id }}
+          restore-keys: |
+            qr-data-
+
+      - name: Pre-fetch eastmoney tomorrow themes (今日题材预注入)
+        # 用东方财富公开 API（免费、无需 token）预注入 eastmoney_tomorrow.json，
+        # 使「今日题材」页能拿到开盘前快照，主题数量/首个主题与原设计对齐。
+        continue-on-error: true
+        run: |
+          set -euo pipefail
+          python3 tools/fetch_eastmoney_tomorrow.py web/public/eastmoney_tomorrow.json \
+            || echo "::warning title=明日主题预拉取失败::eastmoney tomorrow fetch failed, 前端将回退实时 API"
+
+      - name: Run full pipeline
+        env:
+          QR_DATA_SOURCE: free
+          TZ: Asia/Shanghai
+        run: |
+          set -euo pipefail
+          chmod +x ./qr.sh
+          date10="${{ github.event.inputs.date10 || '' }}"
+          if [ -n "${date10}" ]; then
+            echo "指定交易日：${date10}"
+            ./qr.sh fetch "${date10}"
+          else
+            echo "自动判断交易日"
+            ./qr.sh fetch
+          fi
+
+      - name: Verify artifacts
+        id: verify
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import json, sys
+          from pathlib import Path
+
+          dist = Path("web/dist")
+          idx = dist / "index.html"
+          if not idx.exists():
+              sys.exit("未找到 web/dist/index.html")
+
+          # 优先校验最终发布产物（web_bundle 产出的 market_data.json，字段最全），
+          # 回退到按日命名的原始产物
+          src = dist / "market_data.json"
+          if not src.exists():
+              files = sorted(dist.glob("market_data-*.json")) or sorted(Path("cache").glob("market_data-*.json"))
+              if not files:
+                  sys.exit("未找到任何 market_data，流水线可能未产出数据")
+              src = files[-1]
+          data = json.loads(src.read_text(encoding="utf-8"))
+
+          required = ["ztgc", "plateRankTop10", "sectorHeatmap", "mood", "indices", "ladder"]
+          missing = [k for k in required if not data.get(k)]
+          if missing:
+              sys.exit(f"关键字段缺失：{missing}")
+
+          print(f"校验通过：{src.name}  数据日={data.get('date')}  字段数={len(data)}")
+          print(f"  涨停={len(data.get('ztgc') or [])}  板块TOP={len(data.get('plateRankTop10') or [])}")
+          with open("dist_date.txt", "w", encoding="utf-8") as fh:
+              fh.write(str(data.get("date") or ""))
+          PY
+
+      - name: Bundle live page
+        # 实时页是纯前端直连数据源的轻量页，一并放进发布目录：
+        #   /          = 完整版（本流水线每日产出）
+        #   /live.html = 实时版（打开即拉最新，盘中可用，不依赖本流水线）
+        run: |
+          if [ -f web/live/index.html ]; then
+            cp web/live/index.html web/dist/live.html
+            echo "已包含实时页 live.html"
+          else
+            echo "::warning title=Live page missing::web/live/index.html 不存在，跳过"
+          fi
+
+      - name: Deploy to gh-pages
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          cd web/dist
+          touch .nojekyll
+          git init -q
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "无内容变化，跳过提交"
+            exit 0
+          fi
+          date_txt="$(cat ../../dist_date.txt 2>/dev/null || echo '')"
+          git commit -q -m "daily review ${date_txt:-$(date +%F)}"
+          git push -q --force \
+            "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" \
+            HEAD:gh-pages
+          echo "已发布到 gh-pages"
+
+      - name: Summary
+        if: always()
+        run: |
+          echo "### 每日复盘发布结果" >> "$GITHUB_STEP_SUMMARY"
+          echo "" >> "$GITHUB_STEP_SUMMARY"
+          echo "- 触发方式：${{ github.event_name }}" >> "$GITHUB_STEP_SUMMARY"
+          echo "- 数据源：免费公开源（无需 token）" >> "$GITHUB_STEP_SUMMARY"
+          echo "- 状态：${{ job.status }}" >> "$GITHUB_STEP_SUMMARY"
