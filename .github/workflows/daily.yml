@@ -25,6 +25,15 @@ on:
         required: false
         default: ""
         type: string
+      run_job:
+        description: "手动触发时指定只跑哪个 job：daily=仅完整复盘，intraday=仅盘中切片，留空=两个都跑"
+        required: false
+        default: ""
+        type: choice
+        options:
+          - ""
+          - daily
+          - intraday
 
 permissions:
   contents: write
@@ -39,6 +48,8 @@ env:
 
 jobs:
   daily:
+    # 定时 cron 与手动(留空 run_job)都跑；手动指定 run_job=intraday 时跳过，避免误重跑完整复盘
+    if: github.event.inputs.run_job != 'intraday'
     runs-on: ubuntu-latest
     timeout-minutes: 45
 
@@ -179,6 +190,36 @@ jobs:
             echo "::warning title=Live page missing::web/live/index.html 不存在，跳过"
           fi
 
+      - name: 导出 AI 提问 prompt（免费，无需 API key）
+        # 把「原设计者复盘思路(SYSTEM_PROMPT) + 当日数据」合并导出为 ai_prompt.md / ai_prompt.html，
+        # 随整站发布到 gh-pages。用户可打开页面一键复制，粘贴到任意 AI 自行提问（不消耗 token）。
+        # 注意：web_bundle 只把数据内联进 HTML，不保证刷新 web/dist/market_data.json
+        # （该文件可能残留旧日期），所以不能只认这一个文件。这里与 Verify 步骤一致，
+        # 在所有候选里选「数据日(date)最新」的那份，确保导出的 prompt 是当日数据。
+        continue-on-error: true
+        run: |
+          set -euo pipefail
+          SRC=$(python3 - <<'PY'
+          import glob, json
+          cands = glob.glob("web/dist/market_data*.json") + glob.glob("cache/market_data-*.json")
+          best, best_date = None, None
+          for c in cands:
+              try:
+                  d = json.load(open(c, encoding="utf-8"))
+                  dt = d.get("date") or ""
+                  if best_date is None or dt > best_date:
+                      best_date, best = dt, c
+              except Exception:
+                  pass
+          if not best:
+              raise SystemExit("未找到 market_data，跳过 prompt 导出")
+          print(best)
+          PY
+          )
+          python3 daily_review/ai/analyzer.py "$SRC" --export-prompt web/dist/ai_prompt \
+            && echo "::notice title=AI 提问 prompt::已生成 ai_prompt.md（数据日 $(python3 -c "import json;print(json.load(open('$SRC',encoding='utf-8')).get('date'))")）" \
+            || echo "::warning title=AI prompt 导出失败::analyzer export-prompt failed"
+
       - name: Deploy to gh-pages
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -221,6 +262,8 @@ jobs:
   # 盘中切片 job：每 10 分钟跑一次 watch-slice，生成 intraday_runtime.json 并增量发布到 gh-pages。
   # 独立于 daily job，即便 daily 当天未跑，盘中六维参考温度/情绪分/盘中轨迹仍可工作。
   intraday:
+    # 定时 cron 与手动(留空 run_job)都跑；网页「刷新盘中」按钮发 run_job=intraday 只跑这个 job
+    if: github.event.inputs.run_job != 'daily'
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
