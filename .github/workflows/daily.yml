@@ -1,17 +1,23 @@
 name: Daily Review
 
-# 每日收盘后跑完整复盘流水线并发布到 GitHub Pages。
-# 设计目标：仓库根目录只需要两个文件 —— 本文件(.github/workflows/daily.yml) + quant-review-src.txt(项目压缩包)。
-#   - 全程走免费公开数据源 QR_DATA_SOURCE=free，无需任何 token / 密钥
-#   - 解压 quant-review-src.txt 后直接跑 ./qr.sh fetch（含 Vue 前端构建）
-#   - 产出与本地 ./qr.sh fetch 完全一致：完整指标 + 完整 Vue 页面
-# 触发：北京时间 15:40（UTC 07:40，周一至周五）自动跑；也可在 Actions 页面手动 Run workflow。
+# 两个 job：
+#   1) daily    —— 每个交易日 15:40 跑完整复盘并发布整站到 gh-pages（含龙虎榜）。
+#   2) intraday —— 盘中每 10 分钟跑一次 watch-slice，生成 intraday_runtime.json 并
+#                 增量发布到 gh-pages，让「实时盯盘」标签页的六维温度/情绪分/盘中轨迹
+#                 在盘中就有数据。数据源均为免费公开源（东方财富/腾讯），无需任何 token。
+# 仓库根目录只需要两个文件：本文件(.github/workflows/daily.yml) + quant-review-src.txt(项目压缩包)。
 
 on:
   schedule:
-    # GitHub 的 schedule cron 一律按 UTC 执行，且不支持 timezone 字段。
-    # UTC 07:40 = 北京时间 15:40（收盘后 10 分钟，等数据源刷新完毕）
+    # === daily job 触发：北京时间 15:40（收盘后 10 分钟），周一至周五 ===
+    # === intraday job 触发：北京时间 09:30-11:30、13:00-15:00 每 10 分钟 ===
+    # GitHub schedule cron 一律按 UTC，且不支持 timezone 字段：
+    #   UTC 07:40 = 北京 15:40
+    #   北京 09:30-11:30 = UTC 01:30-03:30 → UTC 1-3 时区每 10 分钟
+    #   北京 13:00-15:00 = UTC 05:00-07:00 → UTC 5-7 时区每 10 分钟
     - cron: "40 7 * * 1-5"
+    - cron: "*/10 1-3 * * 1-5"
+    - cron: "*/10 5-7 * * 1-5"
   workflow_dispatch:
     inputs:
       date10:
@@ -138,6 +144,7 @@ jobs:
 
           print(f"校验通过：{src.name}  数据日={data.get('date')}  字段数={len(data)}")
           print(f"  涨停={len(data.get('ztgc') or [])}  板块TOP={len(data.get('plateRankTop10') or [])}")
+          print(f"  龙虎榜={len(data.get('dragonTiger') or {}).get('items') or 0} 只")
           with open("dist_date.txt", "w", encoding="utf-8") as fh:
               fh.write(str(data.get("date") or ""))
           PY
@@ -183,4 +190,110 @@ jobs:
           echo "" >> "$GITHUB_STEP_SUMMARY"
           echo "- 触发方式：${{ github.event_name }}" >> "$GITHUB_STEP_SUMMARY"
           echo "- 数据源：免费公开源（无需 token）" >> "$GITHUB_STEP_SUMMARY"
+          echo "- 状态：${{ job.status }}" >> "$GITHUB_STEP_SUMMARY"
+
+  # 盘中切片 job：每 10 分钟跑一次 watch-slice，生成 intraday_runtime.json 并增量发布到 gh-pages。
+  # 独立于 daily job，即便 daily 当天未跑，盘中六维参考温度/情绪分/盘中轨迹仍可工作。
+  intraday:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: 解压源码
+        run: |
+          set -euo pipefail
+          tar -xzf quant-review-src.txt
+          chmod +x ./qr.sh
+          test -x ./qr.sh && echo "qr.sh OK"
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install Python deps
+        run: |
+          python3 -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Restore cache（保留跨次运行积累的盘中切片）
+        uses: actions/cache@v4
+        with:
+          path: |
+            cache
+          key: intraday-${{ github.run_id }}
+          restore-keys: |
+            intraday-
+
+      - name: Run watch-slice（生成实时盯盘切片 JSON）
+        env:
+          QR_DATA_SOURCE: free
+          TZ: Asia/Shanghai
+        run: |
+          set -euo pipefail
+          date10="${{ github.event.inputs.date10 || '' }}"
+          if [ -n "${date10}" ]; then
+            echo "指定交易日：${date10}"
+            DATE_ARG="${date10}" ./qr.sh watch-slice "${date10}"
+          else
+            ./qr.sh watch-slice
+          fi
+          echo "=== 检查产物 ==="
+          if [ -f web/public/intraday_runtime.json ]; then
+            python3 - <<'PY'
+          import json
+          p = "web/public/intraday_runtime.json"
+          d = json.load(open(p, encoding="utf-8"))
+          print(f"intraday_runtime.json  date={d.get('date')!r}  snapshots={len(d.get('snapshots') or [])}  updated_at={d.get('updated_at')!r}")
+          latest = d.get("latest") or {}
+          print(f"latest.zt={latest.get('zt')}  max_lb={latest.get('max_lb')}  heat={latest.get('heat')}  risk={latest.get('risk')}  shift_score={latest.get('shift_score')}")
+          PY
+          else
+            echo "::error title=Intraday runtime missing::盘中切片产出失败，web/public/intraday_runtime.json 未生成"
+            exit 1
+          fi
+
+      - name: Deploy intraday runtime to gh-pages（增量，不覆盖整站）
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          if [ ! -f web/public/intraday_runtime.json ]; then
+            echo "no runtime to publish"; exit 0
+          fi
+          tmp="$(mktemp -d -t intraday_pub.XXXXXX)"
+          cd "${tmp}"
+          git init -q
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          # 拉取远端 gh-pages（如有），基于其上追加/覆盖实时文件，避免覆盖整站其他内容
+          git fetch --depth=1 "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" gh-pages || true
+          if git checkout -q FETCH_HEAD 2>/dev/null; then
+            echo "基于现有 gh-pages 增量更新"
+          else
+            echo "gh-pages 尚不存在，初始化空仓库"
+          fi
+          mkdir -p cache
+          cp -f "${GITHUB_WORKSPACE}/web/public/intraday_runtime.json" intraday_runtime.json
+          cp -f "${GITHUB_WORKSPACE}/cache/"intraday_slices-*.json cache/ 2>/dev/null || true
+          git add intraday_runtime.json cache/intraday_slices-*.json 2>/dev/null || true
+          if git diff --cached --quiet; then
+            echo "无盘中数据变化，跳过发布"
+          else
+            git commit -q -m "intraday runtime $(date '+%F %T')"
+            git push -q "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" HEAD:gh-pages
+            echo "已增量发布 intraday_runtime.json 到 gh-pages"
+          fi
+
+      - name: Summary
+        if: always()
+        run: |
+          echo "### 盘中切片发布结果" >> "$GITHUB_STEP_SUMMARY"
+          echo "" >> "$GITHUB_STEP_SUMMARY"
+          echo "- 触发方式：${{ github.event_name }}（cron 每 10 分钟 / 手动）" >> "$GITHUB_STEP_SUMMARY"
+          echo "- 数据源：免费公开源（东方财富/腾讯，无需 token）" >> "$GITHUB_STEP_SUMMARY"
           echo "- 状态：${{ job.status }}" >> "$GITHUB_STEP_SUMMARY"
