@@ -98,6 +98,15 @@ jobs:
           python3 tools/fetch_eastmoney_tomorrow.py web/public/eastmoney_tomorrow.json \
             || echo "::warning title=明日主题预拉取失败::eastmoney tomorrow fetch failed, 前端将回退实时 API"
 
+      - name: Collect xuangubao intraday resonance (free, 共振基线)
+        # 免费公开接口（CORS 开放，无需 token）采集选股宝盘中异动，生成板块共振基线
+        # intraday_resonance.json，让「实时盯盘」打开即见当日共振（无需付费 token 源）。
+        continue-on-error: true
+        run: |
+          set -euo pipefail
+          python3 tools/collect_xuangubao_intraday.py \
+            || echo "::warning title=共振基线采集失败::xuangubao resonance collect failed, 前端将仅在盘中实时弹出"
+
       - name: Run full pipeline
         env:
           QR_DATA_SOURCE: free
@@ -251,6 +260,15 @@ jobs:
           else
             ./qr.sh watch-slice
           fi
+
+      - name: Collect xuangubao intraday resonance (free, 盘中增量)
+        # 盘中每 10 分钟顺带采集选股宝异动、刷新板块共振基线，随盘中切片一起发布。
+        continue-on-error: true
+        run: |
+          set -euo pipefail
+          python3 tools/collect_xuangubao_intraday.py \
+            || echo "::warning title=共振基线采集失败::xuangubao resonance collect failed"
+
           echo "=== 检查产物 ==="
           if [ -f web/public/intraday_runtime.json ]; then
             python3 - <<'PY'
@@ -289,7 +307,15 @@ jobs:
           mkdir -p cache
           cp -f "${GITHUB_WORKSPACE}/web/public/intraday_runtime.json" intraday_runtime.json
           cp -f "${GITHUB_WORKSPACE}/cache/"intraday_slices-*.json cache/ 2>/dev/null || true
-          git add intraday_runtime.json cache/intraday_slices-*.json 2>/dev/null || true
+          # 板块共振基线（免费选股宝采集），与盘中切片一并增量发布
+          if [ -f "${GITHUB_WORKSPACE}/web/public/intraday_resonance.json" ]; then
+            cp -f "${GITHUB_WORKSPACE}/web/public/intraday_resonance.json" intraday_resonance.json
+          fi
+          # 选股宝实时热点板块（并入盘后「今日题材」视图，保证题材数不比盘中少）
+          if [ -f "${GITHUB_WORKSPACE}/web/public/xuangubao_plates.json" ]; then
+            cp -f "${GITHUB_WORKSPACE}/web/public/xuangubao_plates.json" xuangubao_plates.json
+          fi
+          git add intraday_runtime.json cache/intraday_slices-*.json intraday_resonance.json xuangubao_plates.json 2>/dev/null || true
           if git diff --cached --quiet; then
             echo "无盘中数据变化，跳过发布"
           else
@@ -300,9 +326,6 @@ jobs:
 
       - name: Summary
         if: always()
-        run: |
-          echo "### 盘中切片发布结果" >> "$GITHUB_STEP_SUMMARY"
-          echo "" >> "$GITHUB_STEP_SUMMARY"
-          echo "- 触发方式：${{ github.event_name }}（cron 每 10 分钟 / 手动）" >> "$GITHUB_STEP_SUMMARY"
+分钟 / 手动）" >> "$GITHUB_STEP_SUMMARY"
           echo "- 数据源：免费公开源（东方财富/腾讯，无需 token）" >> "$GITHUB_STEP_SUMMARY"
           echo "- 状态：${{ job.status }}" >> "$GITHUB_STEP_SUMMARY"
