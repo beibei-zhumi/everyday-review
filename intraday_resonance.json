@@ -1,0 +1,1181 @@
+[
+  {
+    "id": "resonance-1788498521-大农业",
+    "title": "🔥 板块共振：大农业",
+    "subtitle": "新 希 望 +10.00% / 新五丰 +10.04% / 万向德农 +4.74%",
+    "time": "13:08:41",
+    "eventTimestamp": 1788498521,
+    "tone": "red",
+    "eventTypeLabel": "共振爆发",
+    "valueText": "+2.48%",
+    "sector": "大农业",
+    "count": 4,
+    "stocks": [
+      {
+        "name": "新 希 望",
+        "symbol": "000876.SZ",
+        "pct": "+10.00%"
+      },
+      {
+        "name": "新五丰",
+        "symbol": "600975.SS",
+        "pct": "+10.04%"
+      },
+      {
+        "name": "万向德农",
+        "symbol": "600371.SS",
+        "pct": "+4.74%"
+      }
+    ]
+  },
+  {
+    "id": "resonance-1788492044-养猪",
+    "title": "🔥 板块共振：养猪",
+    "subtitle": "傲农生物 +9.30% / 正虹科技 +6.85%",
+    "time": "11:20:44",
+    "eventTimestamp": 1788492044,
+    "tone": "red",
+    "eventTypeLabel": "共振爆发",
+    "valueText": "+4.76%",
+    "sector": "养猪",
+    "count": 3,
+    "stocks": [
+      {
+        "name": "傲农生物",
+        "symbol": "603363.SS",
+        "pct": "+9.30%"
+      },
+      {
+        "name": "正虹科技",
+        "symbol": "000702.SZ",
+        "pct": "+6.85%"
+      }
+    ]
+  },
+  {
+    "id": "resonance-1788498225-华为产业链",
+    "title": "🔥 板块共振：华为产业链",
+    "subtitle": "勤上股份 +3.97% / 我爱我家 +9.79%",
+    "time": "13:03:45",
+    "eventTimestamp": 1788498225,
+    "tone": "red",
+    "eventTypeLabel": "共振爆发",
+    "valueText": "+1.10%",
+    "sector": "华为产业链",
+    "count": 3,
+    "stocks": [
+      {
+        "name": "勤上股份",
+        "symbol": "002638.SZ",
+        "pct": "+3.97%"
+      },
+      {
+        "name": "我爱我家",
+        "symbol": "000560.SZ",
+        "pct": "+9.79%"
+      }
+    ]
+  },
+  {
+    "id": "resonance-1788490185-福建自贸/海西概念",
+    "title": "🔥 板块共振：福建自贸/海西概念",
+    "subtitle": "红相股份 +5.87% / 海峡创新 +13.98% / 合兴包装 +5.40%",
+    "time": "10:49:45",
+    "eventTimestamp": 1788490185,
+    "tone": "red",
+    "eventTypeLabel": "共振爆发",
+    "valueText": "+2.95%",
+    "sector": "福建自贸/海西概念",
+    "count": 4,
+    "stocks": [
+      {
+        "name": "红相股份",
+        "symbol": "300427.SZ",
+        "pct": "+5.87%"
+      },
+      {
+        "name": "海峡创新",
+        "symbol": "300300.SZ",
+        "pct": "+13.98%"
+      },
+      {
+        "name": "合兴包装",
+        "symbol": "002228.SZ",
+        "pct": "+5.40%"
+      }
+    ]
+  },
+  {
+    "id": "resonance-1788498180-一带一路",
+    "title": "🔥 板块共振：一带一路",
+    "subtitle": "华阳国际 +9.07% / 水发燃气 +6.41% / 海通发展 +9.99%",
+    "time": "13:03:00",
+    "eventTimestamp": 1788498180,
+    "tone": "red",
+    "eventTypeLabel": "共振爆发",
+    "valueText": "+1.27%",
+    "sector": "一带一路",
+    "count": 4,
+    "stocks": [
+      {
+        "name": "华阳国际",
+        "symbol": "002949.SZ",
+        "pct": "+9.07%"
+      },
+      {
+        "name": "水发燃气",
+        "symbol": "603318.SS",
+        "pct": "+6.41%"
+      },
+      {
+        "name": "海通发展",
+        "symbol": "603162.SS",
+        "pct": "+9.99%"
+      }
+    ]
+  },
+  {
+    "id": "resonance-1788487524-新能源汽车",
+    "title": "🔥 板块共振：新能源汽车",
+    "subtitle": "锐新科技 +3.71% / 和顺石油 -9.16%",
+    "time": "10:05:24",
+    "eventTimestamp": 1788487524,
+    "tone": "red",
+    "eventTypeLabel": "共振爆发",
+    "valueText": "+0.97%",
+    "sector": "新能源汽车",
+    "count": 3,
+    "stocks": [
+      {
+        "name": "锐新科技",
+        "symbol": "300828.SZ",
+        "pct": "+3.71%"
+      },
+      {
+        "name": "和顺石油",
+        "symbol": "603353.SS",
+        "pct": "-9.16%"
+      }
+    ]
+  },
+  {
+    "id": "resonance-1788486360-阿里巴巴概念股",
+    "title": "🔥 板块共振：阿里巴巴概念股",
+    "subtitle": "用友网络 +6.55% / 南兴股份 +5.26% / 旗天科技 +11.95%",
+    "time": "09:46:00",
+    "eventTimestamp": 1788486360,
+    "tone": "red",
+    "eventTypeLabel": "共振爆发",
+    "valueText": "+2.13%",
+    "sector": "阿里巴巴概念股",
+    "count": 4,
+    "stocks": [
+      {
+        "name": "用友网络",
+        "symbol": "600588.SS",
+        "pct": "+6.55%"
+      },
+      {
+        "name": "南兴股份",
+        "symbol": "002757.SZ",
+        "pct": "+5.26%"
+      },
+      {
+        "name": "旗天科技",
+        "symbol": "300061.SZ",
+        "pct": "+11.95%"
+      }
+    ]
+  },
+  {
+    "id": "resonance-1788486745-教育",
+    "title": "🔥 板块共振：教育",
+    "subtitle": "内蒙新华 +9.79% / 传智教育 +3.06%",
+    "time": "09:52:25",
+    "eventTimestamp": 1788486745,
+    "tone": "red",
+    "eventTypeLabel": "共振爆发",
+    "valueText": "+2.19%",
+    "sector": "教育",
+    "count": 3,
+    "stocks": [
+      {
+        "name": "内蒙新华",
+        "symbol": "603230.SS",
+        "pct": "+9.79%"
+      },
+      {
+        "name": "传智教育",
+        "symbol": "003032.SZ",
+        "pct": "+3.06%"
+      }
+    ]
+  },
+  {
+    "id": "resonance-1788500920-国企改革",
+    "title": "🔥 板块共振：国企改革",
+    "subtitle": "古越龙山 +10.06% / 新五丰 +9.84%",
+    "time": "13:48:40",
+    "eventTimestamp": 1788500920,
+    "tone": "red",
+    "eventTypeLabel": "共振爆发",
+    "valueText": "+0.93%",
+    "sector": "国企改革",
+    "count": 3,
+    "stocks": [
+      {
+        "name": "古越龙山",
+        "symbol": "600059.SS",
+        "pct": "+10.06%"
+      },
+      {
+        "name": "新五丰",
+        "symbol": "600975.SS",
+        "pct": "+9.84%"
+      }
+    ]
+  },
+  {
+    "id": "resonance-1788489056-液冷服务器",
+    "title": "🔥 板块共振：液冷服务器",
+    "subtitle": "远东股份 +3.61% / 统一股份 +10.01%",
+    "time": "10:30:56",
+    "eventTimestamp": 1788489056,
+    "tone": "green",
+    "eventTypeLabel": "共振爆发",
+    "valueText": "-0.36%",
+    "sector": "液冷服务器",
+    "count": 3,
+    "stocks": [
+      {
+        "name": "远东股份",
+        "symbol": "600869.SS",
+        "pct": "+3.61%"
+      },
+      {
+        "name": "统一股份",
+        "symbol": "600506.SS",
+        "pct": "+10.01%"
+      }
+    ]
+  },
+  {
+    "id": "resonance-1788487503-新型城镇化",
+    "title": "🔥 板块共振：新型城镇化",
+    "subtitle": "*ST建艺 +9.60% / 华阳国际 +5.24%",
+    "time": "10:05:03",
+    "eventTimestamp": 1788487503,
+    "tone": "red",
+    "eventTypeLabel": "共振爆发",
+    "valueText": "+1.55%",
+    "sector": "新型城镇化",
+    "count": 3,
+    "stocks": [
+      {
+        "name": "*ST建艺",
+        "symbol": "002789.SZ",
+        "pct": "+9.60%"
+      },
+      {
+        "name": "华阳国际",
+        "symbol": "002949.SZ",
+        "pct": "+5.24%"
+      }
+    ]
+  },
+  {
+    "id": "resonance-1788486747-云计算数据中心",
+    "title": "🔥 板块共振：云计算数据中心",
+    "subtitle": "福达合金 -7.55% / 亚康股份 +3.68%",
+    "time": "09:52:27",
+    "eventTimestamp": 1788486747,
+    "tone": "red",
+    "eventTypeLabel": "共振爆发",
+    "valueText": "+0.93%",
+    "sector": "云计算数据中心",
+    "count": 3,
+    "stocks": [
+      {
+        "name": "福达合金",
+        "symbol": "603045.SS",
+        "pct": "-7.55%"
+      },
+      {
+        "name": "亚康股份",
+        "symbol": "301085.SZ",
+        "pct": "+3.68%"
+      }
+    ]
+  },
+  {
+    "id": "resonance-1788487250-IP经济/谷子经济",
+    "title": "🔥 板块共振：IP经济/谷子经济",
+    "subtitle": "新华百货 -5.99% / 欢瑞世纪 +9.06%",
+    "time": "10:00:50",
+    "eventTimestamp": 1788487250,
+    "tone": "red",
+    "eventTypeLabel": "共振爆发",
+    "valueText": "+2.35%",
+    "sector": "IP经济/谷子经济",
+    "count": 3,
+    "stocks": [
+      {
+        "name": "新华百货",
+        "symbol": "600785.SS",
+        "pct": "-5.99%"
+      },
+      {
+        "name": "欢瑞世纪",
+        "symbol": "000892.SZ",
+        "pct": "+9.06%"
+      }
+    ]
+  },
+  {
+    "id": "resonance-1788503054-新零售",
+    "title": "🔥 板块共振：新零售",
+    "subtitle": "国芳集团 +8.93% / 东百集团 +5.34% / 茂业商业 +4.12%",
+    "time": "14:24:14",
+    "eventTimestamp": 1788503054,
+    "tone": "red",
+    "eventTypeLabel": "共振爆发",
+    "valueText": "+1.66%",
+    "sector": "新零售",
+    "count": 4,
+    "stocks": [
+      {
+        "name": "国芳集团",
+        "symbol": "601086.SS",
+        "pct": "+8.93%"
+      },
+      {
+        "name": "东百集团",
+        "symbol": "600693.SS",
+        "pct": "+5.34%"
+      },
+      {
+        "name": "茂业商业",
+        "symbol": "600828.SS",
+        "pct": "+4.12%"
+      }
+    ]
+  },
+  {
+    "id": "resonance-1788486501-合成生物",
+    "title": "🔥 板块共振：合成生物",
+    "subtitle": "昂利康 +9.00% / 播恩集团 +3.83%",
+    "time": "09:48:21",
+    "eventTimestamp": 1788486501,
+    "tone": "red",
+    "eventTypeLabel": "共振爆发",
+    "valueText": "+1.02%",
+    "sector": "合成生物",
+    "count": 3,
+    "stocks": [
+      {
+        "name": "昂利康",
+        "symbol": "002940.SZ",
+        "pct": "+9.00%"
+      },
+      {
+        "name": "播恩集团",
+        "symbol": "001366.SZ",
+        "pct": "+3.83%"
+      }
+    ]
+  },
+  {
+    "id": "resonance-1788486459-手机产业链",
+    "title": "🔥 板块共振：手机产业链",
+    "subtitle": "捷荣技术 +8.94% / 中京电子 +9.02%",
+    "time": "09:47:39",
+    "eventTimestamp": 1788486459,
+    "tone": "red",
+    "eventTypeLabel": "共振爆发",
+    "valueText": "+0.71%",
+    "sector": "手机产业链",
+    "count": 3,
+    "stocks": [
+      {
+        "name": "捷荣技术",
+        "symbol": "002855.SZ",
+        "pct": "+8.94%"
+      },
+      {
+        "name": "中京电子",
+        "symbol": "002579.SZ",
+        "pct": "+9.02%"
+      }
+    ]
+  },
+  {
+    "id": "resonance-1788499409-股权转让",
+    "title": "🔥 板块共振：股权转让",
+    "subtitle": "ST标准 +9.37% / 冰川网络 +6.54%",
+    "time": "13:23:29",
+    "eventTimestamp": 1788499409,
+    "tone": "red",
+    "eventTypeLabel": "共振爆发",
+    "valueText": "+0.81%",
+    "sector": "股权转让",
+    "count": 3,
+    "stocks": [
+      {
+        "name": "ST标准",
+        "symbol": "600302.SS",
+        "pct": "+9.37%"
+      },
+      {
+        "name": "冰川网络",
+        "symbol": "300533.SZ",
+        "pct": "+6.54%"
+      }
+    ]
+  },
+  {
+    "id": "resonance-1788488277-AI大模型/智能体",
+    "title": "🔥 板块共振：AI大模型/智能体",
+    "subtitle": "欢瑞世纪 +9.45% / 金一文化 +9.30%",
+    "time": "10:17:57",
+    "eventTimestamp": 1788488277,
+    "tone": "red",
+    "eventTypeLabel": "共振爆发",
+    "valueText": "+2.94%",
+    "sector": "AI大模型/智能体",
+    "count": 3,
+    "stocks": [
+      {
+        "name": "欢瑞世纪",
+        "symbol": "000892.SZ",
+        "pct": "+9.45%"
+      },
+      {
+        "name": "金一文化",
+        "symbol": "002721.SZ",
+        "pct": "+9.30%"
+      }
+    ]
+  },
+  {
+    "id": "resonance-1788498161-航天",
+    "title": "🔥 板块共振：航天",
+    "subtitle": "航宇科技 +4.08% / 润贝航科 +9.37%",
+    "time": "13:02:41",
+    "eventTimestamp": 1788498161,
+    "tone": "red",
+    "eventTypeLabel": "共振爆发",
+    "valueText": "+1.08%",
+    "sector": "航天",
+    "count": 3,
+    "stocks": [
+      {
+        "name": "航宇科技",
+        "symbol": "688239.SS",
+        "pct": "+4.08%"
+      },
+      {
+        "name": "润贝航科",
+        "symbol": "001316.SZ",
+        "pct": "+9.37%"
+      }
+    ]
+  },
+  {
+    "id": "resonance-1788490428-军工",
+    "title": "🔥 板块共振：军工",
+    "subtitle": "晨曦航空 +7.58% / 北方长龙 +4.99%",
+    "time": "10:53:48",
+    "eventTimestamp": 1788490428,
+    "tone": "red",
+    "eventTypeLabel": "共振爆发",
+    "valueText": "+1.26%",
+    "sector": "军工",
+    "count": 3,
+    "stocks": [
+      {
+        "name": "晨曦航空",
+        "symbol": "300581.SZ",
+        "pct": "+7.58%"
+      },
+      {
+        "name": "北方长龙",
+        "symbol": "301357.SZ",
+        "pct": "+4.99%"
+      }
+    ]
+  },
+  {
+    "id": "resonance-1788487704-汽车零部件",
+    "title": "🔥 板块共振：汽车零部件",
+    "subtitle": "科华控股 +9.16% / 明新旭腾 -10.00%",
+    "time": "10:08:24",
+    "eventTimestamp": 1788487704,
+    "tone": "red",
+    "eventTypeLabel": "共振爆发",
+    "valueText": "+0.89%",
+    "sector": "汽车零部件",
+    "count": 3,
+    "stocks": [
+      {
+        "name": "科华控股",
+        "symbol": "603161.SS",
+        "pct": "+9.16%"
+      },
+      {
+        "name": "明新旭腾",
+        "symbol": "605068.SS",
+        "pct": "-10.00%"
+      }
+    ]
+  },
+  {
+    "id": "resonance-1788486767-知识产权",
+    "title": "🔥 板块共振：知识产权",
+    "subtitle": "掌阅科技 +7.13% / 中文在线 +7.82% / 出版传媒 +7.28%",
+    "time": "09:52:47",
+    "eventTimestamp": 1788486767,
+    "tone": "red",
+    "eventTypeLabel": "共振爆发",
+    "valueText": "+3.93%",
+    "sector": "知识产权",
+    "count": 4,
+    "stocks": [
+      {
+        "name": "掌阅科技",
+        "symbol": "603533.SS",
+        "pct": "+7.13%"
+      },
+      {
+        "name": "中文在线",
+        "symbol": "300364.SZ",
+        "pct": "+7.82%"
+      },
+      {
+        "name": "出版传媒",
+        "symbol": "601999.SS",
+        "pct": "+7.28%"
+      }
+    ]
+  },
+  {
+    "id": "resonance-1788486903-影视",
+    "title": "🔥 板块共振：影视",
+    "subtitle": "欢瑞世纪 +9.84% / 上海电影 +7.44%",
+    "time": "09:55:03",
+    "eventTimestamp": 1788486903,
+    "tone": "red",
+    "eventTypeLabel": "共振爆发",
+    "valueText": "+3.64%",
+    "sector": "影视",
+    "count": 3,
+    "stocks": [
+      {
+        "name": "欢瑞世纪",
+        "symbol": "000892.SZ",
+        "pct": "+9.84%"
+      },
+      {
+        "name": "上海电影",
+        "symbol": "601595.SS",
+        "pct": "+7.44%"
+      }
+    ]
+  },
+  {
+    "id": "resonance-1788487020-短剧/互动影游",
+    "title": "🔥 板块共振：短剧/互动影游",
+    "subtitle": "欢瑞世纪 +9.06% / 上海电影 +9.17%",
+    "time": "09:57:00",
+    "eventTimestamp": 1788487020,
+    "tone": "red",
+    "eventTypeLabel": "共振爆发",
+    "valueText": "+3.45%",
+    "sector": "短剧/互动影游",
+    "count": 3,
+    "stocks": [
+      {
+        "name": "欢瑞世纪",
+        "symbol": "000892.SZ",
+        "pct": "+9.06%"
+      },
+      {
+        "name": "上海电影",
+        "symbol": "601595.SS",
+        "pct": "+9.17%"
+      }
+    ]
+  },
+  {
+    "id": "resonance-1788501458-跨境电商",
+    "title": "🔥 板块共振：跨境电商",
+    "subtitle": "珠免集团 +7.01% / 东百集团 +6.52%",
+    "time": "13:57:38",
+    "eventTimestamp": 1788501458,
+    "tone": "red",
+    "eventTypeLabel": "共振爆发",
+    "valueText": "+1.60%",
+    "sector": "跨境电商",
+    "count": 3,
+    "stocks": [
+      {
+        "name": "珠免集团",
+        "symbol": "600185.SS",
+        "pct": "+7.01%"
+      },
+      {
+        "name": "东百集团",
+        "symbol": "600693.SS",
+        "pct": "+6.52%"
+      }
+    ]
+  },
+  {
+    "id": "resonance-1788490011-预制菜",
+    "title": "🔥 板块共振：预制菜",
+    "subtitle": "惠发食品 +6.68% / 海欣食品 +7.65%",
+    "time": "10:46:51",
+    "eventTimestamp": 1788490011,
+    "tone": "red",
+    "eventTypeLabel": "共振爆发",
+    "valueText": "+3.25%",
+    "sector": "预制菜",
+    "count": 3,
+    "stocks": [
+      {
+        "name": "惠发食品",
+        "symbol": "603536.SS",
+        "pct": "+6.68%"
+      },
+      {
+        "name": "海欣食品",
+        "symbol": "002702.SZ",
+        "pct": "+7.65%"
+      }
+    ]
+  },
+  {
+    "id": "resonance-1788487521-人造肉",
+    "title": "🔥 板块共振：人造肉",
+    "subtitle": "京粮控股 +5.35% / 登海种业 +5.94% / 湘财股份 +9.30%",
+    "time": "10:05:21",
+    "eventTimestamp": 1788487521,
+    "tone": "red",
+    "eventTypeLabel": "共振爆发",
+    "valueText": "+2.07%",
+    "sector": "人造肉",
+    "count": 4,
+    "stocks": [
+      {
+        "name": "京粮控股",
+        "symbol": "000505.SZ",
+        "pct": "+5.35%"
+      },
+      {
+        "name": "登海种业",
+        "symbol": "002041.SZ",
+        "pct": "+5.94%"
+      },
+      {
+        "name": "湘财股份",
+        "symbol": "600095.SS",
+        "pct": "+9.30%"
+      }
+    ]
+  },
+  {
+    "id": "resonance-1788487371-无人驾驶",
+    "title": "🔥 板块共振：无人驾驶",
+    "subtitle": "浙江世宝 -3.08% / 大众交通 +4.66%",
+    "time": "10:02:51",
+    "eventTimestamp": 1788487371,
+    "tone": "red",
+    "eventTypeLabel": "共振爆发",
+    "valueText": "+1.13%",
+    "sector": "无人驾驶",
+    "count": 3,
+    "stocks": [
+      {
+        "name": "浙江世宝",
+        "symbol": "002703.SZ",
+        "pct": "-3.08%"
+      },
+      {
+        "name": "大众交通",
+        "symbol": "600611.SS",
+        "pct": "+4.66%"
+      }
+    ]
+  },
+  {
+    "id": "resonance-1788488613-风电",
+    "title": "🔥 板块共振：风电",
+    "subtitle": "金现代 +3.17% / 金帝股份 +3.72% / 统一股份 +9.77%",
+    "time": "10:23:33",
+    "eventTimestamp": 1788488613,
+    "tone": "red",
+    "eventTypeLabel": "共振爆发",
+    "valueText": "+1.24%",
+    "sector": "风电",
+    "count": 4,
+    "stocks": [
+      {
+        "name": "金现代",
+        "symbol": "300830.SZ",
+        "pct": "+3.17%"
+      },
+      {
+        "name": "金帝股份",
+        "symbol": "603270.SS",
+        "pct": "+3.72%"
+      },
+      {
+        "name": "统一股份",
+        "symbol": "600506.SS",
+        "pct": "+9.77%"
+      }
+    ]
+  },
+  {
+    "id": "resonance-1788486492-医药",
+    "title": "🔥 板块共振：医药",
+    "subtitle": "昂利康 +9.24% / 东亚药业 +9.03%",
+    "time": "09:48:12",
+    "eventTimestamp": 1788486492,
+    "tone": "red",
+    "eventTypeLabel": "共振爆发",
+    "valueText": "+0.71%",
+    "sector": "医药",
+    "count": 3,
+    "stocks": [
+      {
+        "name": "昂利康",
+        "symbol": "002940.SZ",
+        "pct": "+9.24%"
+      },
+      {
+        "name": "东亚药业",
+        "symbol": "605177.SS",
+        "pct": "+9.03%"
+      }
+    ]
+  },
+  {
+    "id": "resonance-1788486858-字节跳动概念股",
+    "title": "🔥 板块共振：字节跳动概念股",
+    "subtitle": "易点天下 +17.45% / 中广天择 +5.32%",
+    "time": "09:54:18",
+    "eventTimestamp": 1788486858,
+    "tone": "red",
+    "eventTypeLabel": "共振爆发",
+    "valueText": "+3.38%",
+    "sector": "字节跳动概念股",
+    "count": 3,
+    "stocks": [
+      {
+        "name": "易点天下",
+        "symbol": "301171.SZ",
+        "pct": "+17.45%"
+      },
+      {
+        "name": "中广天择",
+        "symbol": "603721.SS",
+        "pct": "+5.32%"
+      }
+    ]
+  },
+  {
+    "id": "resonance-1788487261-数据要素",
+    "title": "🔥 板块共振：数据要素",
+    "subtitle": "竞业达 -5.11% / 华是科技 +3.42% / 雪迪龙 +4.99%",
+    "time": "10:01:01",
+    "eventTimestamp": 1788487261,
+    "tone": "red",
+    "eventTypeLabel": "共振爆发",
+    "valueText": "+3.22%",
+    "sector": "数据要素",
+    "count": 4,
+    "stocks": [
+      {
+        "name": "竞业达",
+        "symbol": "003005.SZ",
+        "pct": "-5.11%"
+      },
+      {
+        "name": "华是科技",
+        "symbol": "301218.SZ",
+        "pct": "+3.42%"
+      },
+      {
+        "name": "雪迪龙",
+        "symbol": "002658.SZ",
+        "pct": "+4.99%"
+      }
+    ]
+  },
+  {
+    "id": "resonance-1788487458-智能制造",
+    "title": "🔥 板块共振：智能制造",
+    "subtitle": "鲁银投资 +7.81% / *ST英飞 -9.00% / 森赫股份 +9.37%",
+    "time": "10:04:18",
+    "eventTimestamp": 1788487458,
+    "tone": "red",
+    "eventTypeLabel": "共振爆发",
+    "valueText": "+0.96%",
+    "sector": "智能制造",
+    "count": 4,
+    "stocks": [
+      {
+        "name": "鲁银投资",
+        "symbol": "600784.SS",
+        "pct": "+7.81%"
+      },
+      {
+        "name": "*ST英飞",
+        "symbol": "002528.SZ",
+        "pct": "-9.00%"
+      },
+      {
+        "name": "森赫股份",
+        "symbol": "301056.SZ",
+        "pct": "+9.37%"
+      }
+    ]
+  },
+  {
+    "id": "resonance-1788487800-AI营销",
+    "title": "🔥 板块共振：AI营销",
+    "subtitle": "芒果超媒 +14.64% / 凯淳股份 +8.37%",
+    "time": "10:10:00",
+    "eventTimestamp": 1788487800,
+    "tone": "red",
+    "eventTypeLabel": "共振爆发",
+    "valueText": "+6.04%",
+    "sector": "AI营销",
+    "count": 3,
+    "stocks": [
+      {
+        "name": "芒果超媒",
+        "symbol": "300413.SZ",
+        "pct": "+14.64%"
+      },
+      {
+        "name": "凯淳股份",
+        "symbol": "301001.SZ",
+        "pct": "+8.37%"
+      }
+    ]
+  },
+  {
+    "id": "resonance-1788486303-国产软件",
+    "title": "🔥 板块共振：国产软件",
+    "subtitle": "宇信科技 +9.55% / 泛微网络 +7.05% / 税友股份 +4.83%",
+    "time": "09:45:03",
+    "eventTimestamp": 1788486303,
+    "tone": "red",
+    "eventTypeLabel": "共振爆发",
+    "valueText": "+2.80%",
+    "sector": "国产软件",
+    "count": 4,
+    "stocks": [
+      {
+        "name": "宇信科技",
+        "symbol": "300674.SZ",
+        "pct": "+9.55%"
+      },
+      {
+        "name": "泛微网络",
+        "symbol": "603039.SS",
+        "pct": "+7.05%"
+      },
+      {
+        "name": "税友股份",
+        "symbol": "603171.SS",
+        "pct": "+4.83%"
+      }
+    ]
+  },
+  {
+    "id": "resonance-1788486354-信创",
+    "title": "🔥 板块共振：信创",
+    "subtitle": "麒麟信安 +5.37% / 税友股份 +4.83% / 鼎捷数智 +8.39%",
+    "time": "09:45:54",
+    "eventTimestamp": 1788486354,
+    "tone": "red",
+    "eventTypeLabel": "共振爆发",
+    "valueText": "+2.70%",
+    "sector": "信创",
+    "count": 4,
+    "stocks": [
+      {
+        "name": "麒麟信安",
+        "symbol": "688152.SS",
+        "pct": "+5.37%"
+      },
+      {
+        "name": "税友股份",
+        "symbol": "603171.SS",
+        "pct": "+4.83%"
+      },
+      {
+        "name": "鼎捷数智",
+        "symbol": "300378.SZ",
+        "pct": "+8.39%"
+      }
+    ]
+  },
+  {
+    "id": "resonance-1788486480-数字人民币",
+    "title": "🔥 板块共振：数字人民币",
+    "subtitle": "古鳌科技 +7.25% / 东信和平 +8.26% / 亚世光电 +5.80%",
+    "time": "09:48:00",
+    "eventTimestamp": 1788486480,
+    "tone": "red",
+    "eventTypeLabel": "共振爆发",
+    "valueText": "+4.21%",
+    "sector": "数字人民币",
+    "count": 4,
+    "stocks": [
+      {
+        "name": "古鳌科技",
+        "symbol": "300551.SZ",
+        "pct": "+7.25%"
+      },
+      {
+        "name": "东信和平",
+        "symbol": "002017.SZ",
+        "pct": "+8.26%"
+      },
+      {
+        "name": "亚世光电",
+        "symbol": "002952.SZ",
+        "pct": "+5.80%"
+      }
+    ]
+  },
+  {
+    "id": "resonance-1788487542-金融科技",
+    "title": "🔥 板块共振：金融科技",
+    "subtitle": "金一文化 +9.30% / 汇金股份 +4.76%",
+    "time": "10:05:42",
+    "eventTimestamp": 1788487542,
+    "tone": "red",
+    "eventTypeLabel": "共振爆发",
+    "valueText": "+4.48%",
+    "sector": "金融科技",
+    "count": 3,
+    "stocks": [
+      {
+        "name": "金一文化",
+        "symbol": "002721.SZ",
+        "pct": "+9.30%"
+      },
+      {
+        "name": "汇金股份",
+        "symbol": "300368.SZ",
+        "pct": "+4.76%"
+      }
+    ]
+  },
+  {
+    "id": "resonance-1788487428-光电共封装CPO",
+    "title": "🔥 板块共振：光电共封装CPO",
+    "subtitle": "优迅股份 +3.49% / 德科立 +5.36%",
+    "time": "10:03:48",
+    "eventTimestamp": 1788487428,
+    "tone": "red",
+    "eventTypeLabel": "共振爆发",
+    "valueText": "+0.18%",
+    "sector": "光电共封装CPO",
+    "count": 3,
+    "stocks": [
+      {
+        "name": "优迅股份",
+        "symbol": "688807.SS",
+        "pct": "+3.49%"
+      },
+      {
+        "name": "德科立",
+        "symbol": "688205.SS",
+        "pct": "+5.36%"
+      }
+    ]
+  },
+  {
+    "id": "resonance-1788487428-光通信",
+    "title": "🔥 板块共振：光通信",
+    "subtitle": "优迅股份 +3.49% / 德科立 +5.36%",
+    "time": "10:03:48",
+    "eventTimestamp": 1788487428,
+    "tone": "red",
+    "eventTypeLabel": "共振爆发",
+    "valueText": "+0.21%",
+    "sector": "光通信",
+    "count": 3,
+    "stocks": [
+      {
+        "name": "优迅股份",
+        "symbol": "688807.SS",
+        "pct": "+3.49%"
+      },
+      {
+        "name": "德科立",
+        "symbol": "688205.SS",
+        "pct": "+5.36%"
+      }
+    ]
+  },
+  {
+    "id": "resonance-1788487020-传媒",
+    "title": "🔥 板块共振：传媒",
+    "subtitle": "易点天下 +20.00% / 内蒙新华 +9.79%",
+    "time": "09:57:00",
+    "eventTimestamp": 1788487020,
+    "tone": "red",
+    "eventTypeLabel": "共振爆发",
+    "valueText": "+3.79%",
+    "sector": "传媒",
+    "count": 3,
+    "stocks": [
+      {
+        "name": "易点天下",
+        "symbol": "301171.SZ",
+        "pct": "+20.00%"
+      },
+      {
+        "name": "内蒙新华",
+        "symbol": "603230.SS",
+        "pct": "+9.79%"
+      }
+    ]
+  },
+  {
+    "id": "resonance-1788487260-区块链",
+    "title": "🔥 板块共振：区块链",
+    "subtitle": "中科江南 +7.63% / 四方精创 +20.00% / 恒宝股份 +9.96%",
+    "time": "10:01:00",
+    "eventTimestamp": 1788487260,
+    "tone": "red",
+    "eventTypeLabel": "共振爆发",
+    "valueText": "+2.77%",
+    "sector": "区块链",
+    "count": 4,
+    "stocks": [
+      {
+        "name": "中科江南",
+        "symbol": "301153.SZ",
+        "pct": "+7.63%"
+      },
+      {
+        "name": "四方精创",
+        "symbol": "300468.SZ",
+        "pct": "+20.00%"
+      },
+      {
+        "name": "恒宝股份",
+        "symbol": "002104.SZ",
+        "pct": "+9.96%"
+      }
+    ]
+  },
+  {
+    "id": "resonance-1788486281-网络安全",
+    "title": "🔥 板块共振：网络安全",
+    "subtitle": "麒麟信安 +5.37% / 东信和平 +8.26%",
+    "time": "09:44:41",
+    "eventTimestamp": 1788486281,
+    "tone": "red",
+    "eventTypeLabel": "共振爆发",
+    "valueText": "+2.05%",
+    "sector": "网络安全",
+    "count": 3,
+    "stocks": [
+      {
+        "name": "麒麟信安",
+        "symbol": "688152.SS",
+        "pct": "+5.37%"
+      },
+      {
+        "name": "东信和平",
+        "symbol": "002017.SZ",
+        "pct": "+8.26%"
+      }
+    ]
+  },
+  {
+    "id": "resonance-1788490185-泛在电力物联网",
+    "title": "🔥 板块共振：泛在电力物联网",
+    "subtitle": "红相股份 +5.87% / 双杰电气 +9.68%",
+    "time": "10:49:45",
+    "eventTimestamp": 1788490185,
+    "tone": "red",
+    "eventTypeLabel": "共振爆发",
+    "valueText": "+1.72%",
+    "sector": "泛在电力物联网",
+    "count": 3,
+    "stocks": [
+      {
+        "name": "红相股份",
+        "symbol": "300427.SZ",
+        "pct": "+5.87%"
+      },
+      {
+        "name": "双杰电气",
+        "symbol": "300444.SZ",
+        "pct": "+9.68%"
+      }
+    ]
+  },
+  {
+    "id": "resonance-1788486305-Kimi概念",
+    "title": "🔥 板块共振：Kimi概念",
+    "subtitle": "福昕软件 +4.48% / 因赛集团 +5.54%",
+    "time": "09:45:05",
+    "eventTimestamp": 1788486305,
+    "tone": "red",
+    "eventTypeLabel": "共振爆发",
+    "valueText": "+3.81%",
+    "sector": "Kimi概念",
+    "count": 3,
+    "stocks": [
+      {
+        "name": "福昕软件",
+        "symbol": "688095.SS",
+        "pct": "+4.48%"
+      },
+      {
+        "name": "因赛集团",
+        "symbol": "300781.SZ",
+        "pct": "+5.54%"
+      }
+    ]
+  },
+  {
+    "id": "resonance-1788486859-染料",
+    "title": "🔥 板块共振：染料",
+    "subtitle": "吉华集团 +7.41% / 锦鸡股份 +3.11% / 闰土股份 +3.11%",
+    "time": "09:54:19",
+    "eventTimestamp": 1788486859,
+    "tone": "red",
+    "eventTypeLabel": "共振爆发",
+    "valueText": "+1.64%",
+    "sector": "染料",
+    "count": 4,
+    "stocks": [
+      {
+        "name": "吉华集团",
+        "symbol": "603980.SS",
+        "pct": "+7.41%"
+      },
+      {
+        "name": "锦鸡股份",
+        "symbol": "300798.SZ",
+        "pct": "+3.11%"
+      },
+      {
+        "name": "闰土股份",
+        "symbol": "002440.SZ",
+        "pct": "+3.11%"
+      }
+    ]
+  }
+]
