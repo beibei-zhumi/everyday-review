@@ -1,0 +1,262 @@
+[
+  {
+    "id": "resonance-1790745411-国企改革",
+    "title": "🔥 板块共振：国企改革",
+    "subtitle": "上海电力 +3.05% / 杭州热电 +10.02% / 华茂股份 -9.72%",
+    "time": "13:16:51",
+    "eventTimestamp": 1790745411,
+    "tone": "red",
+    "eventTypeLabel": "共振爆发",
+    "valueText": "+0.26%",
+    "sector": "国企改革",
+    "count": 4,
+    "stocks": [
+      {
+        "name": "上海电力",
+        "symbol": "600021.SS",
+        "pct": "+3.05%"
+      },
+      {
+        "name": "杭州热电",
+        "symbol": "605011.SS",
+        "pct": "+10.02%"
+      },
+      {
+        "name": "华茂股份",
+        "symbol": "000850.SZ",
+        "pct": "-9.72%"
+      }
+    ]
+  },
+  {
+    "id": "resonance-1790746250-房地产",
+    "title": "🔥 板块共振：房地产",
+    "subtitle": "金地集团 +9.02% / 万  科Ａ +7.11%",
+    "time": "13:30:50",
+    "eventTimestamp": 1790746250,
+    "tone": "red",
+    "eventTypeLabel": "共振爆发",
+    "valueText": "+1.20%",
+    "sector": "房地产",
+    "count": 3,
+    "stocks": [
+      {
+        "name": "金地集团",
+        "symbol": "600383.SS",
+        "pct": "+9.02%"
+      },
+      {
+        "name": "万  科Ａ",
+        "symbol": "000002.SZ",
+        "pct": "+7.11%"
+      }
+    ]
+  },
+  {
+    "id": "resonance-1790746805-低价股",
+    "title": "🔥 板块共振：低价股",
+    "subtitle": "金地集团 +9.02% / 广田集团 +5.11%",
+    "time": "13:40:05",
+    "eventTimestamp": 1790746805,
+    "tone": "red",
+    "eventTypeLabel": "共振爆发",
+    "valueText": "+0.59%",
+    "sector": "低价股",
+    "count": 3,
+    "stocks": [
+      {
+        "name": "金地集团",
+        "symbol": "600383.SS",
+        "pct": "+9.02%"
+      },
+      {
+        "name": "广田集团",
+        "symbol": "002482.SZ",
+        "pct": "+5.11%"
+      }
+    ]
+  },
+  {
+    "id": "resonance-1790749659-风电",
+    "title": "🔥 板块共振：风电",
+    "subtitle": "天顺风能 +4.58% / 大金重工 +9.01%",
+    "time": "14:27:39",
+    "eventTimestamp": 1790749659,
+    "tone": "red",
+    "eventTypeLabel": "共振爆发",
+    "valueText": "+0.14%",
+    "sector": "风电",
+    "count": 3,
+    "stocks": [
+      {
+        "name": "天顺风能",
+        "symbol": "002531.SZ",
+        "pct": "+4.58%"
+      },
+      {
+        "name": "大金重工",
+        "symbol": "002487.SZ",
+        "pct": "+9.01%"
+      }
+    ]
+  },
+  {
+    "id": "resonance-1790744709-新型城镇化",
+    "title": "🔥 板块共振：新型城镇化",
+    "subtitle": "联泰环保 -10.07% / 深物业A +9.61%",
+    "time": "13:05:09",
+    "eventTimestamp": 1790744709,
+    "tone": "green",
+    "eventTypeLabel": "共振爆发",
+    "valueText": "-0.56%",
+    "sector": "新型城镇化",
+    "count": 3,
+    "stocks": [
+      {
+        "name": "联泰环保",
+        "symbol": "603797.SS",
+        "pct": "-10.07%"
+      },
+      {
+        "name": "深物业A",
+        "symbol": "000011.SZ",
+        "pct": "+9.61%"
+      }
+    ]
+  },
+  {
+    "id": "resonance-1790744538-华为产业链",
+    "title": "🔥 板块共振：华为产业链",
+    "subtitle": "华瓷股份 -10.00% / 传艺科技 +10.03%",
+    "time": "13:02:18",
+    "eventTimestamp": 1790744538,
+    "tone": "green",
+    "eventTypeLabel": "共振爆发",
+    "valueText": "-0.80%",
+    "sector": "华为产业链",
+    "count": 3,
+    "stocks": [
+      {
+        "name": "华瓷股份",
+        "symbol": "001216.SZ",
+        "pct": "-10.00%"
+      },
+      {
+        "name": "传艺科技",
+        "symbol": "002866.SZ",
+        "pct": "+10.03%"
+      }
+    ]
+  },
+  {
+    "id": "resonance-1790744607-深圳本地股",
+    "title": "🔥 板块共振：深圳本地股",
+    "subtitle": "世联行 -6.85% / 特发服务 -3.01% / 深物业A +9.61% / 深粮控股 +4.78%",
+    "time": "13:03:27",
+    "eventTimestamp": 1790744607,
+    "tone": "green",
+    "eventTypeLabel": "共振爆发",
+    "valueText": "-0.51%",
+    "sector": "深圳本地股",
+    "count": 5,
+    "stocks": [
+      {
+        "name": "世联行",
+        "symbol": "002285.SZ",
+        "pct": "-6.85%"
+      },
+      {
+        "name": "特发服务",
+        "symbol": "300917.SZ",
+        "pct": "-3.01%"
+      },
+      {
+        "name": "深物业A",
+        "symbol": "000011.SZ",
+        "pct": "+9.61%"
+      },
+      {
+        "name": "深粮控股",
+        "symbol": "000019.SZ",
+        "pct": "+4.78%"
+      }
+    ]
+  },
+  {
+    "id": "resonance-1790744815-AI大模型/智能体",
+    "title": "🔥 板块共振：AI大模型/智能体",
+    "subtitle": "天虹股份 +3.89% / 我爱我家 -3.19%",
+    "time": "13:06:55",
+    "eventTimestamp": 1790744815,
+    "tone": "green",
+    "eventTypeLabel": "共振爆发",
+    "valueText": "-0.54%",
+    "sector": "AI大模型/智能体",
+    "count": 3,
+    "stocks": [
+      {
+        "name": "天虹股份",
+        "symbol": "002419.SZ",
+        "pct": "+3.89%"
+      },
+      {
+        "name": "我爱我家",
+        "symbol": "000560.SZ",
+        "pct": "-3.19%"
+      }
+    ]
+  },
+  {
+    "id": "resonance-1790745810-大农业",
+    "title": "🔥 板块共振：大农业",
+    "subtitle": "广康生化 +12.10% / 熊猫乳品 +3.13%",
+    "time": "13:23:30",
+    "eventTimestamp": 1790745810,
+    "tone": "red",
+    "eventTypeLabel": "共振爆发",
+    "valueText": "+0.94%",
+    "sector": "大农业",
+    "count": 3,
+    "stocks": [
+      {
+        "name": "广康生化",
+        "symbol": "300804.SZ",
+        "pct": "+12.10%"
+      },
+      {
+        "name": "熊猫乳品",
+        "symbol": "300898.SZ",
+        "pct": "+3.13%"
+      }
+    ]
+  },
+  {
+    "id": "resonance-1790744853-农药",
+    "title": "🔥 板块共振：农药",
+    "subtitle": "蓝丰生化 +9.51% / 鼎龙科技 +5.85% / 广康生化 +12.89%",
+    "time": "13:07:33",
+    "eventTimestamp": 1790744853,
+    "tone": "red",
+    "eventTypeLabel": "共振爆发",
+    "valueText": "+1.72%",
+    "sector": "农药",
+    "count": 4,
+    "stocks": [
+      {
+        "name": "蓝丰生化",
+        "symbol": "002513.SZ",
+        "pct": "+9.51%"
+      },
+      {
+        "name": "鼎龙科技",
+        "symbol": "603004.SS",
+        "pct": "+5.85%"
+      },
+      {
+        "name": "广康生化",
+        "symbol": "300804.SZ",
+        "pct": "+12.89%"
+      }
+    ]
+  }
+]
