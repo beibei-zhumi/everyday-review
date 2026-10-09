@@ -1,0 +1,354 @@
+[
+  {
+    "id": "resonance-1791526556-新能源汽车",
+    "title": "🔥 板块共振：新能源汽车",
+    "subtitle": "百合花 -10.00% / 泰永长征 -10.00%",
+    "time": "14:15:56",
+    "eventTimestamp": 1791526556,
+    "tone": "green",
+    "eventTypeLabel": "共振爆发",
+    "valueText": "-0.19%",
+    "sector": "新能源汽车",
+    "count": 3,
+    "stocks": [
+      {
+        "name": "百合花",
+        "symbol": "603823.SS",
+        "pct": "-10.00%"
+      },
+      {
+        "name": "泰永长征",
+        "symbol": "002927.SZ",
+        "pct": "-10.00%"
+      }
+    ]
+  },
+  {
+    "id": "resonance-1791526638-传媒",
+    "title": "🔥 板块共振：传媒",
+    "subtitle": "粤 传 媒 +9.95% / 无线传媒 +12.67% / 新华文轩 +9.26%",
+    "time": "14:17:18",
+    "eventTimestamp": 1791526638,
+    "tone": "red",
+    "eventTypeLabel": "共振爆发",
+    "valueText": "+5.49%",
+    "sector": "传媒",
+    "count": 4,
+    "stocks": [
+      {
+        "name": "粤 传 媒",
+        "symbol": "002181.SZ",
+        "pct": "+9.95%"
+      },
+      {
+        "name": "无线传媒",
+        "symbol": "301551.SZ",
+        "pct": "+12.67%"
+      },
+      {
+        "name": "新华文轩",
+        "symbol": "601811.SS",
+        "pct": "+9.26%"
+      }
+    ]
+  },
+  {
+    "id": "resonance-1791526323-AI大模型/智能体",
+    "title": "🔥 板块共振：AI大模型/智能体",
+    "subtitle": "普洛药业 -6.13% / 中信出版 +7.29% / 三人行 +7.64%",
+    "time": "14:12:03",
+    "eventTimestamp": 1791526323,
+    "tone": "red",
+    "eventTypeLabel": "共振爆发",
+    "valueText": "+2.03%",
+    "sector": "AI大模型/智能体",
+    "count": 4,
+    "stocks": [
+      {
+        "name": "普洛药业",
+        "symbol": "000739.SZ",
+        "pct": "-6.13%"
+      },
+      {
+        "name": "中信出版",
+        "symbol": "300788.SZ",
+        "pct": "+7.29%"
+      },
+      {
+        "name": "三人行",
+        "symbol": "605168.SS",
+        "pct": "+7.64%"
+      }
+    ]
+  },
+  {
+    "id": "resonance-1791526677-短剧/互动影游",
+    "title": "🔥 板块共振：短剧/互动影游",
+    "subtitle": "慈文传媒 +9.76% / 博纳影业 +9.94% / 芒果超媒 +19.35% / 粤 传 媒 +9.95%",
+    "time": "14:17:57",
+    "eventTimestamp": 1791526677,
+    "tone": "red",
+    "eventTypeLabel": "共振爆发",
+    "valueText": "+6.38%",
+    "sector": "短剧/互动影游",
+    "count": 5,
+    "stocks": [
+      {
+        "name": "慈文传媒",
+        "symbol": "002343.SZ",
+        "pct": "+9.76%"
+      },
+      {
+        "name": "博纳影业",
+        "symbol": "001330.SZ",
+        "pct": "+9.94%"
+      },
+      {
+        "name": "芒果超媒",
+        "symbol": "300413.SZ",
+        "pct": "+19.35%"
+      },
+      {
+        "name": "粤 传 媒",
+        "symbol": "002181.SZ",
+        "pct": "+9.95%"
+      }
+    ]
+  },
+  {
+    "id": "resonance-1791527613-国企改革",
+    "title": "🔥 板块共振：国企改革",
+    "subtitle": "中交发展 +3.80% / 文投控股 +9.38%",
+    "time": "14:33:33",
+    "eventTimestamp": 1791527613,
+    "tone": "red",
+    "eventTypeLabel": "共振爆发",
+    "valueText": "+1.02%",
+    "sector": "国企改革",
+    "count": 3,
+    "stocks": [
+      {
+        "name": "中交发展",
+        "symbol": "000736.SZ",
+        "pct": "+3.80%"
+      },
+      {
+        "name": "文投控股",
+        "symbol": "600715.SS",
+        "pct": "+9.38%"
+      }
+    ]
+  },
+  {
+    "id": "resonance-1791526527-字节跳动概念股",
+    "title": "🔥 板块共振：字节跳动概念股",
+    "subtitle": "粤 传 媒 +9.95% / 无线传媒 +12.67%",
+    "time": "14:15:27",
+    "eventTimestamp": 1791526527,
+    "tone": "red",
+    "eventTypeLabel": "共振爆发",
+    "valueText": "+2.67%",
+    "sector": "字节跳动概念股",
+    "count": 3,
+    "stocks": [
+      {
+        "name": "粤 传 媒",
+        "symbol": "002181.SZ",
+        "pct": "+9.95%"
+      },
+      {
+        "name": "无线传媒",
+        "symbol": "301551.SZ",
+        "pct": "+12.67%"
+      }
+    ]
+  },
+  {
+    "id": "resonance-1791526686-影视",
+    "title": "🔥 板块共振：影视",
+    "subtitle": "慈文传媒 +8.32% / 芒果超媒 +18.68% / 博纳影业 +9.15%",
+    "time": "14:18:06",
+    "eventTimestamp": 1791526686,
+    "tone": "red",
+    "eventTypeLabel": "共振爆发",
+    "valueText": "+6.68%",
+    "sector": "影视",
+    "count": 4,
+    "stocks": [
+      {
+        "name": "慈文传媒",
+        "symbol": "002343.SZ",
+        "pct": "+8.32%"
+      },
+      {
+        "name": "芒果超媒",
+        "symbol": "300413.SZ",
+        "pct": "+18.68%"
+      },
+      {
+        "name": "博纳影业",
+        "symbol": "001330.SZ",
+        "pct": "+9.15%"
+      }
+    ]
+  },
+  {
+    "id": "resonance-1791526728-华为产业链",
+    "title": "🔥 板块共振：华为产业链",
+    "subtitle": "华是科技 +14.71% / 芒果超媒 +19.14%",
+    "time": "14:18:48",
+    "eventTimestamp": 1791526728,
+    "tone": "red",
+    "eventTypeLabel": "共振爆发",
+    "valueText": "+0.72%",
+    "sector": "华为产业链",
+    "count": 3,
+    "stocks": [
+      {
+        "name": "华是科技",
+        "symbol": "301218.SZ",
+        "pct": "+14.71%"
+      },
+      {
+        "name": "芒果超媒",
+        "symbol": "300413.SZ",
+        "pct": "+19.14%"
+      }
+    ]
+  },
+  {
+    "id": "resonance-1791526602-智能制造",
+    "title": "🔥 板块共振：智能制造",
+    "subtitle": "梦天家居 +6.02% / 三羊马 +4.60%",
+    "time": "14:16:42",
+    "eventTimestamp": 1791526602,
+    "tone": "green",
+    "eventTypeLabel": "共振爆发",
+    "valueText": "-0.20%",
+    "sector": "智能制造",
+    "count": 3,
+    "stocks": [
+      {
+        "name": "梦天家居",
+        "symbol": "603216.SS",
+        "pct": "+6.02%"
+      },
+      {
+        "name": "三羊马",
+        "symbol": "001317.SZ",
+        "pct": "+4.60%"
+      }
+    ]
+  },
+  {
+    "id": "resonance-1791526620-阿里巴巴概念股",
+    "title": "🔥 板块共振：阿里巴巴概念股",
+    "subtitle": "博纳影业 +9.15% / 华是科技 +12.24%",
+    "time": "14:17:00",
+    "eventTimestamp": 1791526620,
+    "tone": "red",
+    "eventTypeLabel": "共振爆发",
+    "valueText": "+2.15%",
+    "sector": "阿里巴巴概念股",
+    "count": 3,
+    "stocks": [
+      {
+        "name": "博纳影业",
+        "symbol": "001330.SZ",
+        "pct": "+9.15%"
+      },
+      {
+        "name": "华是科技",
+        "symbol": "301218.SZ",
+        "pct": "+12.24%"
+      }
+    ]
+  },
+  {
+    "id": "resonance-1791526725-IP经济/谷子经济",
+    "title": "🔥 板块共振：IP经济/谷子经济",
+    "subtitle": "芒果超媒 +19.98% / 慈文传媒 +9.76% / 博纳影业 +9.94% / 双枪科技 +5.80%",
+    "time": "14:18:45",
+    "eventTimestamp": 1791526725,
+    "tone": "red",
+    "eventTypeLabel": "共振爆发",
+    "valueText": "+3.12%",
+    "sector": "IP经济/谷子经济",
+    "count": 5,
+    "stocks": [
+      {
+        "name": "芒果超媒",
+        "symbol": "300413.SZ",
+        "pct": "+19.98%"
+      },
+      {
+        "name": "慈文传媒",
+        "symbol": "002343.SZ",
+        "pct": "+9.76%"
+      },
+      {
+        "name": "博纳影业",
+        "symbol": "001330.SZ",
+        "pct": "+9.94%"
+      },
+      {
+        "name": "双枪科技",
+        "symbol": "001211.SZ",
+        "pct": "+5.80%"
+      }
+    ]
+  },
+  {
+    "id": "resonance-1791526437-跨境电商",
+    "title": "🔥 板块共振：跨境电商",
+    "subtitle": "双枪科技 +5.80% / 三羊马 +4.60% / 易点天下 +7.25%",
+    "time": "14:13:57",
+    "eventTimestamp": 1791526437,
+    "tone": "red",
+    "eventTypeLabel": "共振爆发",
+    "valueText": "+1.40%",
+    "sector": "跨境电商",
+    "count": 4,
+    "stocks": [
+      {
+        "name": "双枪科技",
+        "symbol": "001211.SZ",
+        "pct": "+5.80%"
+      },
+      {
+        "name": "三羊马",
+        "symbol": "001317.SZ",
+        "pct": "+4.60%"
+      },
+      {
+        "name": "易点天下",
+        "symbol": "301171.SZ",
+        "pct": "+7.25%"
+      }
+    ]
+  },
+  {
+    "id": "resonance-1791526398-云计算数据中心",
+    "title": "🔥 板块共振：云计算数据中心",
+    "subtitle": "泰永长征 -10.00% / 大元泵业 +3.76%",
+    "time": "14:13:18",
+    "eventTimestamp": 1791526398,
+    "tone": "red",
+    "eventTypeLabel": "共振爆发",
+    "valueText": "+0.03%",
+    "sector": "云计算数据中心",
+    "count": 3,
+    "stocks": [
+      {
+        "name": "泰永长征",
+        "symbol": "002927.SZ",
+        "pct": "-10.00%"
+      },
+      {
+        "name": "大元泵业",
+        "symbol": "603757.SS",
+        "pct": "+3.76%"
+      }
+    ]
+  }
+]
