@@ -1,0 +1,113 @@
+[
+  {
+    "id": "resonance-1793342511-机器人",
+    "title": "🔥 板块共振：机器人",
+    "subtitle": "宁波东力 +8.67% / 横河精密 -3.70%",
+    "time": "14:41:51",
+    "eventTimestamp": 1793342511,
+    "tone": "green",
+    "eventTypeLabel": "共振爆发",
+    "valueText": "-3.64%",
+    "sector": "机器人",
+    "count": 3,
+    "stocks": [
+      {
+        "name": "宁波东力",
+        "symbol": "002164.SZ",
+        "pct": "+8.67%"
+      },
+      {
+        "name": "横河精密",
+        "symbol": "300539.SZ",
+        "pct": "-3.70%"
+      }
+    ]
+  },
+  {
+    "id": "resonance-1793342550-新型城镇化",
+    "title": "🔥 板块共振：新型城镇化",
+    "subtitle": "黑牡丹 +9.88% / 大千生态 -4.56%",
+    "time": "14:42:30",
+    "eventTimestamp": 1793342550,
+    "tone": "green",
+    "eventTypeLabel": "共振爆发",
+    "valueText": "-2.94%",
+    "sector": "新型城镇化",
+    "count": 3,
+    "stocks": [
+      {
+        "name": "黑牡丹",
+        "symbol": "600510.SS",
+        "pct": "+9.88%"
+      },
+      {
+        "name": "大千生态",
+        "symbol": "603955.SS",
+        "pct": "-4.56%"
+      }
+    ]
+  },
+  {
+    "id": "resonance-1793342984-华为产业链",
+    "title": "🔥 板块共振：华为产业链",
+    "subtitle": "春秋电子 -9.60% / 凯撒文化 -10.06% / 南威软件 -9.98% / 天洋新材 +9.92%",
+    "time": "14:49:44",
+    "eventTimestamp": 1793342984,
+    "tone": "green",
+    "eventTypeLabel": "共振爆发",
+    "valueText": "-3.72%",
+    "sector": "华为产业链",
+    "count": 5,
+    "stocks": [
+      {
+        "name": "春秋电子",
+        "symbol": "603890.SS",
+        "pct": "-9.60%"
+      },
+      {
+        "name": "凯撒文化",
+        "symbol": "002425.SZ",
+        "pct": "-10.06%"
+      },
+      {
+        "name": "南威软件",
+        "symbol": "603636.SS",
+        "pct": "-9.98%"
+      },
+      {
+        "name": "天洋新材",
+        "symbol": "603330.SS",
+        "pct": "+9.92%"
+      }
+    ]
+  },
+  {
+    "id": "resonance-1793343313-一带一路",
+    "title": "🔥 板块共振：一带一路",
+    "subtitle": "万朗磁塑 -10.00% / *ST正平 -9.06% / 三羊马 -9.92%",
+    "time": "14:55:13",
+    "eventTimestamp": 1793343313,
+    "tone": "green",
+    "eventTypeLabel": "共振爆发",
+    "valueText": "-2.32%",
+    "sector": "一带一路",
+    "count": 4,
+    "stocks": [
+      {
+        "name": "万朗磁塑",
+        "symbol": "603150.SS",
+        "pct": "-10.00%"
+      },
+      {
+        "name": "*ST正平",
+        "symbol": "603843.SS",
+        "pct": "-9.06%"
+      },
+      {
+        "name": "三羊马",
+        "symbol": "001317.SZ",
+        "pct": "-9.92%"
+      }
+    ]
+  }
+]
