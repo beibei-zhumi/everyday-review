@@ -1,0 +1,122 @@
+[
+  {
+    "id": "resonance-1793944520-影视",
+    "title": "🔥 板块共振：影视",
+    "subtitle": "芒果超媒 +7.29% / 大晟文化 -9.92%",
+    "time": "13:55:20",
+    "eventTimestamp": 1793944520,
+    "tone": "red",
+    "eventTypeLabel": "共振爆发",
+    "valueText": "+0.70%",
+    "sector": "影视",
+    "count": 3,
+    "stocks": [
+      {
+        "name": "芒果超媒",
+        "symbol": "300413.SZ",
+        "pct": "+7.29%"
+      },
+      {
+        "name": "大晟文化",
+        "symbol": "600892.SS",
+        "pct": "-9.92%"
+      }
+    ]
+  },
+  {
+    "id": "resonance-1793946391-国企改革",
+    "title": "🔥 板块共振：国企改革",
+    "subtitle": "华阳新材 -9.03% / 上海九百 -9.91%",
+    "time": "14:26:31",
+    "eventTimestamp": 1793946391,
+    "tone": "green",
+    "eventTypeLabel": "共振爆发",
+    "valueText": "-0.76%",
+    "sector": "国企改革",
+    "count": 3,
+    "stocks": [
+      {
+        "name": "华阳新材",
+        "symbol": "600281.SS",
+        "pct": "-9.03%"
+      },
+      {
+        "name": "上海九百",
+        "symbol": "600838.SS",
+        "pct": "-9.91%"
+      }
+    ]
+  },
+  {
+    "id": "resonance-1793944762-短剧/互动影游",
+    "title": "🔥 板块共振：短剧/互动影游",
+    "subtitle": "大晟文化 -9.34% / 果麦文化 +3.01%",
+    "time": "13:59:22",
+    "eventTimestamp": 1793944762,
+    "tone": "green",
+    "eventTypeLabel": "共振爆发",
+    "valueText": "-0.46%",
+    "sector": "短剧/互动影游",
+    "count": 3,
+    "stocks": [
+      {
+        "name": "大晟文化",
+        "symbol": "600892.SS",
+        "pct": "-9.34%"
+      },
+      {
+        "name": "果麦文化",
+        "symbol": "301052.SZ",
+        "pct": "+3.01%"
+      }
+    ]
+  },
+  {
+    "id": "resonance-1793946708-低价股",
+    "title": "🔥 板块共振：低价股",
+    "subtitle": "*ST瑞茂 +5.83% / 文投控股 -9.13%",
+    "time": "14:31:48",
+    "eventTimestamp": 1793946708,
+    "tone": "green",
+    "eventTypeLabel": "共振爆发",
+    "valueText": "-0.92%",
+    "sector": "低价股",
+    "count": 3,
+    "stocks": [
+      {
+        "name": "*ST瑞茂",
+        "symbol": "600180.SS",
+        "pct": "+5.83%"
+      },
+      {
+        "name": "文投控股",
+        "symbol": "600715.SS",
+        "pct": "-9.13%"
+      }
+    ]
+  },
+  {
+    "id": "resonance-1793945184-医药",
+    "title": "🔥 板块共振：医药",
+    "subtitle": "桂林三金 +9.91% / *ST香雪 +5.36%",
+    "time": "14:06:24",
+    "eventTimestamp": 1793945184,
+    "tone": "green",
+    "eventTypeLabel": "共振爆发",
+    "valueText": "-1.61%",
+    "sector": "医药",
+    "count": 3,
+    "stocks": [
+      {
+        "name": "桂林三金",
+        "symbol": "002275.SZ",
+        "pct": "+9.91%"
+      },
+      {
+        "name": "*ST香雪",
+        "symbol": "300147.SZ",
+        "pct": "+5.36%"
+      }
+    ]
+  }
+]
