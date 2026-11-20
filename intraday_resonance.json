@@ -1,0 +1,578 @@
+[
+  {
+    "id": "resonance-1795158210-机器人",
+    "title": "🔥 板块共振：机器人",
+    "subtitle": "横河精密 -15.51% / 宇晶股份 -9.98%",
+    "time": "15:03:30",
+    "eventTimestamp": 1795158210,
+    "tone": "green",
+    "eventTypeLabel": "共振爆发",
+    "valueText": "-5.75%",
+    "sector": "机器人",
+    "count": 3,
+    "stocks": [
+      {
+        "name": "横河精密",
+        "symbol": "300539.SZ",
+        "pct": "-15.51%"
+      },
+      {
+        "name": "宇晶股份",
+        "symbol": "002943.SZ",
+        "pct": "-9.98%"
+      }
+    ]
+  },
+  {
+    "id": "resonance-1795157753-云计算数据中心",
+    "title": "🔥 板块共振：云计算数据中心",
+    "subtitle": "华丰科技 -13.21% / 康盛股份 -9.95%",
+    "time": "14:55:53",
+    "eventTimestamp": 1795157753,
+    "tone": "green",
+    "eventTypeLabel": "共振爆发",
+    "valueText": "-5.71%",
+    "sector": "云计算数据中心",
+    "count": 3,
+    "stocks": [
+      {
+        "name": "华丰科技",
+        "symbol": "688629.SS",
+        "pct": "-13.21%"
+      },
+      {
+        "name": "康盛股份",
+        "symbol": "002418.SZ",
+        "pct": "-9.95%"
+      }
+    ]
+  },
+  {
+    "id": "resonance-1795158000-华为产业链",
+    "title": "🔥 板块共振：华为产业链",
+    "subtitle": "横河精密 -15.51% / 华立股份 -9.97% / 国光电器 -9.98% / 华丰科技 -13.21%",
+    "time": "15:00:00",
+    "eventTimestamp": 1795158000,
+    "tone": "green",
+    "eventTypeLabel": "共振爆发",
+    "valueText": "-5.25%",
+    "sector": "华为产业链",
+    "count": 5,
+    "stocks": [
+      {
+        "name": "横河精密",
+        "symbol": "300539.SZ",
+        "pct": "-15.51%"
+      },
+      {
+        "name": "华立股份",
+        "symbol": "603038.SS",
+        "pct": "-9.97%"
+      },
+      {
+        "name": "国光电器",
+        "symbol": "002045.SZ",
+        "pct": "-9.98%"
+      },
+      {
+        "name": "华丰科技",
+        "symbol": "688629.SS",
+        "pct": "-13.21%"
+      }
+    ]
+  },
+  {
+    "id": "resonance-1795157682-国企改革",
+    "title": "🔥 板块共振：国企改革",
+    "subtitle": "华建集团 -10.02% / 巨化股份 -10.01% / 双环科技 -9.89% / 安邦护卫 -10.01% / 洪都航空 -10.01%",
+    "time": "14:54:42",
+    "eventTimestamp": 1795157682,
+    "tone": "green",
+    "eventTypeLabel": "共振爆发",
+    "valueText": "-3.55%",
+    "sector": "国企改革",
+    "count": 6,
+    "stocks": [
+      {
+        "name": "华建集团",
+        "symbol": "600629.SS",
+        "pct": "-10.02%"
+      },
+      {
+        "name": "巨化股份",
+        "symbol": "600160.SS",
+        "pct": "-10.01%"
+      },
+      {
+        "name": "双环科技",
+        "symbol": "000707.SZ",
+        "pct": "-9.89%"
+      },
+      {
+        "name": "安邦护卫",
+        "symbol": "603373.SS",
+        "pct": "-10.01%"
+      },
+      {
+        "name": "洪都航空",
+        "symbol": "600316.SS",
+        "pct": "-10.01%"
+      }
+    ]
+  },
+  {
+    "id": "resonance-1795157748-AI大模型/智能体",
+    "title": "🔥 板块共振：AI大模型/智能体",
+    "subtitle": "星华新材 -14.17% / 安博通 -11.62% / *ST亚士 -9.09%",
+    "time": "14:55:48",
+    "eventTimestamp": 1795157748,
+    "tone": "green",
+    "eventTypeLabel": "共振爆发",
+    "valueText": "-5.00%",
+    "sector": "AI大模型/智能体",
+    "count": 4,
+    "stocks": [
+      {
+        "name": "星华新材",
+        "symbol": "301077.SZ",
+        "pct": "-14.17%"
+      },
+      {
+        "name": "安博通",
+        "symbol": "688168.SS",
+        "pct": "-11.62%"
+      },
+      {
+        "name": "*ST亚士",
+        "symbol": "603378.SS",
+        "pct": "-9.09%"
+      }
+    ]
+  },
+  {
+    "id": "resonance-1795157811-航天",
+    "title": "🔥 板块共振：航天",
+    "subtitle": "盟升电子 -8.46% / 苏州科达 -9.94% / 和顺科技 -10.09% / 北化股份 -10.02%",
+    "time": "14:56:51",
+    "eventTimestamp": 1795157811,
+    "tone": "green",
+    "eventTypeLabel": "共振爆发",
+    "valueText": "-6.15%",
+    "sector": "航天",
+    "count": 5,
+    "stocks": [
+      {
+        "name": "盟升电子",
+        "symbol": "688311.SS",
+        "pct": "-8.46%"
+      },
+      {
+        "name": "苏州科达",
+        "symbol": "603660.SS",
+        "pct": "-9.94%"
+      },
+      {
+        "name": "和顺科技",
+        "symbol": "301237.SZ",
+        "pct": "-10.09%"
+      },
+      {
+        "name": "北化股份",
+        "symbol": "002246.SZ",
+        "pct": "-10.02%"
+      }
+    ]
+  },
+  {
+    "id": "resonance-1795157803-军工",
+    "title": "🔥 板块共振：军工",
+    "subtitle": "美盈森 -9.18% / 洪都航空 -10.01% / 北化股份 -10.02%",
+    "time": "14:56:43",
+    "eventTimestamp": 1795157803,
+    "tone": "green",
+    "eventTypeLabel": "共振爆发",
+    "valueText": "-5.52%",
+    "sector": "军工",
+    "count": 4,
+    "stocks": [
+      {
+        "name": "美盈森",
+        "symbol": "002303.SZ",
+        "pct": "-9.18%"
+      },
+      {
+        "name": "洪都航空",
+        "symbol": "600316.SS",
+        "pct": "-10.01%"
+      },
+      {
+        "name": "北化股份",
+        "symbol": "002246.SZ",
+        "pct": "-10.02%"
+      }
+    ]
+  },
+  {
+    "id": "resonance-1795157785-锂电池",
+    "title": "🔥 板块共振：锂电池",
+    "subtitle": "深圳新星 -10.01% / 欧克科技 -8.34% / 毅昌科技 -9.97%",
+    "time": "14:56:25",
+    "eventTimestamp": 1795157785,
+    "tone": "green",
+    "eventTypeLabel": "共振爆发",
+    "valueText": "-5.03%",
+    "sector": "锂电池",
+    "count": 4,
+    "stocks": [
+      {
+        "name": "深圳新星",
+        "symbol": "603978.SS",
+        "pct": "-10.01%"
+      },
+      {
+        "name": "欧克科技",
+        "symbol": "001223.SZ",
+        "pct": "-8.34%"
+      },
+      {
+        "name": "毅昌科技",
+        "symbol": "002420.SZ",
+        "pct": "-9.97%"
+      }
+    ]
+  },
+  {
+    "id": "resonance-1795158000-新能源汽车",
+    "title": "🔥 板块共振：新能源汽车",
+    "subtitle": "深圳新星 -9.89% / *ST启环 -10.26%",
+    "time": "15:00:00",
+    "eventTimestamp": 1795158000,
+    "tone": "green",
+    "eventTypeLabel": "共振爆发",
+    "valueText": "-5.03%",
+    "sector": "新能源汽车",
+    "count": 3,
+    "stocks": [
+      {
+        "name": "深圳新星",
+        "symbol": "603978.SS",
+        "pct": "-9.89%"
+      },
+      {
+        "name": "*ST启环",
+        "symbol": "000826.SZ",
+        "pct": "-10.26%"
+      }
+    ]
+  },
+  {
+    "id": "resonance-1795157816-智能眼镜/MR头显",
+    "title": "🔥 板块共振：智能眼镜/MR头显",
+    "subtitle": "宇晶股份 -9.98% / 瀛通通讯 -9.63% / 比依股份 -10.01% / 奥来德 -6.42% / 思林杰 -12.12%",
+    "time": "14:56:56",
+    "eventTimestamp": 1795157816,
+    "tone": "green",
+    "eventTypeLabel": "共振爆发",
+    "valueText": "-5.99%",
+    "sector": "智能眼镜/MR头显",
+    "count": 6,
+    "stocks": [
+      {
+        "name": "宇晶股份",
+        "symbol": "002943.SZ",
+        "pct": "-9.98%"
+      },
+      {
+        "name": "瀛通通讯",
+        "symbol": "002861.SZ",
+        "pct": "-9.63%"
+      },
+      {
+        "name": "比依股份",
+        "symbol": "603215.SS",
+        "pct": "-10.01%"
+      },
+      {
+        "name": "奥来德",
+        "symbol": "688378.SS",
+        "pct": "-6.42%"
+      },
+      {
+        "name": "思林杰",
+        "symbol": "688115.SS",
+        "pct": "-12.12%"
+      }
+    ]
+  },
+  {
+    "id": "resonance-1795157799-新型城镇化",
+    "title": "🔥 板块共振：新型城镇化",
+    "subtitle": "时空科技 -9.99% / *ST启环 -10.26% / 森赫股份 -8.07% / 华建集团 -10.02%",
+    "time": "14:56:39",
+    "eventTimestamp": 1795157799,
+    "tone": "green",
+    "eventTypeLabel": "共振爆发",
+    "valueText": "-4.61%",
+    "sector": "新型城镇化",
+    "count": 5,
+    "stocks": [
+      {
+        "name": "时空科技",
+        "symbol": "605178.SS",
+        "pct": "-9.99%"
+      },
+      {
+        "name": "*ST启环",
+        "symbol": "000826.SZ",
+        "pct": "-10.26%"
+      },
+      {
+        "name": "森赫股份",
+        "symbol": "301056.SZ",
+        "pct": "-8.07%"
+      },
+      {
+        "name": "华建集团",
+        "symbol": "600629.SS",
+        "pct": "-10.02%"
+      }
+    ]
+  },
+  {
+    "id": "resonance-1795157790-智能制造",
+    "title": "🔥 板块共振：智能制造",
+    "subtitle": "赛腾股份 -10.00% / 亿嘉和 -9.96% / 威派格 -9.22% / 长虹美菱 -9.26%",
+    "time": "14:56:30",
+    "eventTimestamp": 1795157790,
+    "tone": "green",
+    "eventTypeLabel": "共振爆发",
+    "valueText": "-5.39%",
+    "sector": "智能制造",
+    "count": 5,
+    "stocks": [
+      {
+        "name": "赛腾股份",
+        "symbol": "603283.SS",
+        "pct": "-10.00%"
+      },
+      {
+        "name": "亿嘉和",
+        "symbol": "603666.SS",
+        "pct": "-9.96%"
+      },
+      {
+        "name": "威派格",
+        "symbol": "603956.SS",
+        "pct": "-9.22%"
+      },
+      {
+        "name": "长虹美菱",
+        "symbol": "000521.SZ",
+        "pct": "-9.26%"
+      }
+    ]
+  },
+  {
+    "id": "resonance-1795157766-高铁轨交",
+    "title": "🔥 板块共振：高铁轨交",
+    "subtitle": "华丰科技 -13.21% / *ST海华 -9.36% / 华亚智能 -9.03% / 亿嘉和 -9.96%",
+    "time": "14:56:06",
+    "eventTimestamp": 1795157766,
+    "tone": "green",
+    "eventTypeLabel": "共振爆发",
+    "valueText": "-4.82%",
+    "sector": "高铁轨交",
+    "count": 5,
+    "stocks": [
+      {
+        "name": "华丰科技",
+        "symbol": "688629.SS",
+        "pct": "-13.21%"
+      },
+      {
+        "name": "*ST海华",
+        "symbol": "600243.SS",
+        "pct": "-9.36%"
+      },
+      {
+        "name": "华亚智能",
+        "symbol": "003043.SZ",
+        "pct": "-9.03%"
+      },
+      {
+        "name": "亿嘉和",
+        "symbol": "603666.SS",
+        "pct": "-9.96%"
+      }
+    ]
+  },
+  {
+    "id": "resonance-1795157761-充电桩",
+    "title": "🔥 板块共振：充电桩",
+    "subtitle": "*ST正平 -8.10% / 毅昌科技 -9.81% / 日出东方 +3.84% / 亿嘉和 -10.00% / 立新能源 -9.41%",
+    "time": "14:56:01",
+    "eventTimestamp": 1795157761,
+    "tone": "green",
+    "eventTypeLabel": "共振爆发",
+    "valueText": "-4.86%",
+    "sector": "充电桩",
+    "count": 6,
+    "stocks": [
+      {
+        "name": "*ST正平",
+        "symbol": "603843.SS",
+        "pct": "-8.10%"
+      },
+      {
+        "name": "毅昌科技",
+        "symbol": "002420.SZ",
+        "pct": "-9.81%"
+      },
+      {
+        "name": "日出东方",
+        "symbol": "603366.SS",
+        "pct": "+3.84%"
+      },
+      {
+        "name": "亿嘉和",
+        "symbol": "603666.SS",
+        "pct": "-10.00%"
+      },
+      {
+        "name": "立新能源",
+        "symbol": "001258.SZ",
+        "pct": "-9.41%"
+      }
+    ]
+  },
+  {
+    "id": "resonance-1795157737-阿里巴巴概念股",
+    "title": "🔥 板块共振：阿里巴巴概念股",
+    "subtitle": "顺钠股份 -10.01% / 神州数码 -9.64%",
+    "time": "14:55:37",
+    "eventTimestamp": 1795157737,
+    "tone": "green",
+    "eventTypeLabel": "共振爆发",
+    "valueText": "-5.09%",
+    "sector": "阿里巴巴概念股",
+    "count": 3,
+    "stocks": [
+      {
+        "name": "顺钠股份",
+        "symbol": "000533.SZ",
+        "pct": "-10.01%"
+      },
+      {
+        "name": "神州数码",
+        "symbol": "000034.SZ",
+        "pct": "-9.64%"
+      }
+    ]
+  },
+  {
+    "id": "resonance-1795157727-一带一路",
+    "title": "🔥 板块共振：一带一路",
+    "subtitle": "森赫股份 -8.07% / 达刚控股 -8.51%",
+    "time": "14:55:27",
+    "eventTimestamp": 1795157727,
+    "tone": "green",
+    "eventTypeLabel": "共振爆发",
+    "valueText": "-3.96%",
+    "sector": "一带一路",
+    "count": 3,
+    "stocks": [
+      {
+        "name": "森赫股份",
+        "symbol": "301056.SZ",
+        "pct": "-8.07%"
+      },
+      {
+        "name": "达刚控股",
+        "symbol": "300103.SZ",
+        "pct": "-8.51%"
+      }
+    ]
+  },
+  {
+    "id": "resonance-1795157709-回购",
+    "title": "🔥 板块共振：回购",
+    "subtitle": "华虹宏力 -4.79% / 趣睡科技 -10.12% / 真爱美家 -9.09%",
+    "time": "14:55:09",
+    "eventTimestamp": 1795157709,
+    "tone": "green",
+    "eventTypeLabel": "共振爆发",
+    "valueText": "-4.84%",
+    "sector": "回购",
+    "count": 4,
+    "stocks": [
+      {
+        "name": "华虹宏力",
+        "symbol": "688347.SS",
+        "pct": "-4.79%"
+      },
+      {
+        "name": "趣睡科技",
+        "symbol": "301336.SZ",
+        "pct": "-10.12%"
+      },
+      {
+        "name": "真爱美家",
+        "symbol": "003041.SZ",
+        "pct": "-9.09%"
+      }
+    ]
+  },
+  {
+    "id": "resonance-1795157694-固态电池",
+    "title": "🔥 板块共振：固态电池",
+    "subtitle": "华亚智能 -9.03% / 科森科技 -10.01%",
+    "time": "14:54:54",
+    "eventTimestamp": 1795157694,
+    "tone": "green",
+    "eventTypeLabel": "共振爆发",
+    "valueText": "-5.00%",
+    "sector": "固态电池",
+    "count": 3,
+    "stocks": [
+      {
+        "name": "华亚智能",
+        "symbol": "003043.SZ",
+        "pct": "-9.03%"
+      },
+      {
+        "name": "科森科技",
+        "symbol": "603626.SS",
+        "pct": "-10.01%"
+      }
+    ]
+  },
+  {
+    "id": "resonance-1795157662-光刻机（胶）",
+    "title": "🔥 板块共振：光刻机（胶）",
+    "subtitle": "奥来德 -6.42% / 扬帆新材 -5.17% / 华亚智能 -9.03%",
+    "time": "14:54:22",
+    "eventTimestamp": 1795157662,
+    "tone": "green",
+    "eventTypeLabel": "共振爆发",
+    "valueText": "-6.22%",
+    "sector": "光刻机（胶）",
+    "count": 4,
+    "stocks": [
+      {
+        "name": "奥来德",
+        "symbol": "688378.SS",
+        "pct": "-6.42%"
+      },
+      {
+        "name": "扬帆新材",
+        "symbol": "300637.SZ",
+        "pct": "-5.17%"
+      },
+      {
+        "name": "华亚智能",
+        "symbol": "003043.SZ",
+        "pct": "-9.03%"
+      }
+    ]
+  }
+]

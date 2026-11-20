@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI 提问 prompt · 2026-11-20</title>
+<style>
+body{max-width:840px;margin:20px auto;padding:0 14px;font-family:-apple-system,'PingFang SC','Microsoft YaHei',sans-serif;color:#1f2329}
+h1{font-size:19px;margin:0 0 4px} .sub{color:#6b7280;font-size:13px;margin-bottom:10px}
+.bar{position:sticky;top:0;background:#fff;padding:10px 0;display:flex;gap:10px;align-items:center;z-index:1}
+button{font-size:15px;padding:10px 18px;border:0;border-radius:8px;background:#f59e0b;color:#fff;font-weight:700}
+.tip{color:#16a34a;font-weight:700;margin-left:6px}
+textarea{width:100%;height:68vh;font-size:12.5px;line-height:1.6;padding:12px;border:1px solid #e5e7eb;border-radius:10px;box-sizing:border-box;font-family:ui-monospace,Menlo,Consolas,monospace;resize:vertical}
+</style>
+</head>
+<body>
+<h1>AI 提问 prompt（原设计者复盘思路 + 当日数据）</h1>
+<div class="sub">复制全文后粘贴到任意 AI（ChatGPT / DeepSeek / Kimi 等），再附上你自己的问题即可。</div>
+<div class="bar">
+  <button id="cp">复制全文</button>
+  <span id="tip" class="tip"></span>
+</div>
+<textarea id="ta" readonly>你是一位资深的 A 股短线复盘分析师，擅长把当日盘面数据写成一份
+结构完整、有专业判断、可读性强的大盘复盘长文（公众号风格）。
+
+# 写作要求
+- 全文使用 Markdown 格式，标题用 # / ## / ### 分层。
+- 必须基于我提供的数据来写，禁止编造不存在的个股、价格、席位；数据缺失时
+  明确标注「暂无席位数据，以下为基于涨停结构的推演」。
+- 语气专业、克制、有观点，像资深操盘手在复盘，不要罗列数据流水账。
+- 每个板块都要有「判断」，而不只是「描述」。
+- 个股解密要具体到：为什么涨停、资金博弈位置、次日关注点（承接/分化/风险）。
+- 游资与机构点评要落实到具体席位或风格（如「呼家楼」「方新侠」「机构净流入」），
+  数据缺失时基于涨停结构合理推演并标注。
+- 文末给出明确的次日策略与关注标的，可操作。
+
+# 固定输出结构（必须包含以下全部标题，顺序不限，可合并小节）
+# A股简报 · {日期}
+## 一、盘面回顾
+## 二、板块核心（主线题材、强度、持续性）
+## 三、异动复盘（炸板/回首掏/地天板/天地板等关键个股）
+## 四、涨停个股解密（逐只重点票：逻辑、资金博弈、次日关注）
+## 五、龙头榜（连板高度、空间龙、情绪龙）
+## 六、机构净流入（板块/个股资金流向，无数据则推演并标注）
+## 七、游资大事记（活跃游资及其标的与手法）
+## 八、整体策略与明日推演（仓位、方向、确认条件、风险点）
+## 九、关注标的（次日可跟踪的 3-5 只）
+## 十、底部策略（低位/补涨/新题材观察）
+## 总结（2-3 句收束）
+
+================ 以下是当日市场数据（由每日复盘流水线产出） ================
+
+【交易日】2026-11-20
+
+【数据来源】free
+
+【盘面全景】
+涨停 28家 / 炸板 7家 / 跌停 58家 / 封板率 80.0% / 连板 ?家
+
+【情绪温度】
+热度 52 / 风险 58 / 综合 41 / 市场标签 大盘偏弱
+
+【情绪阶段】
+启动·分歧（warn）— 分歧 | 姿态 试错 | 周期 START
+
+【量能】
+14222.00亿（+8.97% 大幅放量 1170.53亿）
+
+【主线题材】
+1. 央国企改革：9只涨停 — 最强
+2. 机器人概念：5只涨停 — 爆发
+3. 染料：1只涨停 — 轮动
+4. 一带一路：5只涨停 — 爆发
+5. 光伏概念：4只涨停 — 爆发
+6. 影视概念：3只涨停 — 活跃
+7. 高市盈率：3只涨停 — 活跃
+8. 装配建筑：4只涨停 — 爆发
+
+【连板天梯】
+1. 🐲 真视通（?板）
+2. 盛剑科技（?板）
+3. 中京电子（?板）
+
+【龙头股】
+- 冰山冷热：{'ignition': {'oneWord': False, 'strictOneWord': False, 'oneWordScore': 0.0, 'earlyScore': 3.88, 'sealScore': 19.57, 'relScore': 12.0, 'durMin': 279.2, 'durScore': 6.0, 'spaceScore': 0.0, 'space': {'lbc': 1, 'limitPct': 0.1}, 'openPenalty': 2.8}, 'explosion': {'theme': '储能概念', 'hit': True, 'count': 3, 'follow': 2, 'followRatio': 1.0, 'spreadMin': 179.9, 'boost': '一级题材'}, 'lead': {'lagSec': 0, 'themeFirst': '100054'}, 'tags': ['带动板块', '先发', '一级题材'], 'themeBonus': 2.5, 'themeTier': 1}
+- 荣联科技：{'ignition': {'oneWord': False, 'strictOneWord': False, 'oneWordScore': 0.0, 'earlyScore': 7.79, 'sealScore': 19.19, 'relScore': 12.0, 'durMin': 0.0, 'durScore': 0.0, 'spaceScore': 0.0, 'space': {'lbc': 1, 'limitPct': 0.1}, 'openPenalty': 0.0}, 'explosion': {'theme': '央国企改革', 'hit': True, 'count': 4, 'follow': 3, 'followRatio': 1.0, 'spreadMin': 105.7, 'boost': ''}, 'lead': {'lagSec': 0, 'themeFirst': '093133'}, 'tags': ['带动板块', '先发'], 'themeBonus': 0.0, 'themeTier': 2}
+- 超声电子：{'ignition': {'oneWord': False, 'strictOneWord': False, 'oneWordScore': 0.0, 'earlyScore': 3.9, 'sealScore': 19.79, 'relScore': 12.0, 'durMin': 0.0, 'durScore': 0.0, 'spaceScore': 0.0, 'space': {'lbc': 1, 'limitPct': 0.1}, 'openPenalty': 0.0}, 'explosion': {'theme': '光通信模块', 'hit': True, 'count': 2, 'follow': 1, 'followRatio': 1.0, 'spreadMin': 79.7, 'boost': '一级题材'}, 'lead': {'lagSec': 0, 'themeFirst': '100045'}, 'tags': ['先发', '一级题材', '光模块优先'], 'themeBonus': 4.0, 'themeTier': 1}
+- 中京电子：{'ignition': {'oneWord': False, 'strictOneWord': False, 'oneWordScore': 0.0, 'earlyScore': 7.15, 'sealScore': 20.0, 'relScore': 12.0, 'durMin': 0.0, 'durScore': 0.0, 'spaceScore': 2.0, 'space': {'lbc': 2, 'limitPct': 0.1}, 'openPenalty': 0.0}, 'explosion': {'theme': 'CPO概念', 'hit': True, 'count': 1, 'follow': 0, 'followRatio': 0.0, 'spreadMin': 0.0, 'boost': '一级题材'}, 'lead': {'lagSec': 0, 'themeFirst': '093624'}, 'tags': ['先发', '一级题材', '光模块优先'], 'themeBonus': 4.0, 'themeTier': 1}
+- 光华科技：{'ignition': {'oneWord': False, 'strictOneWord': False, 'oneWordScore': 0.0, 'earlyScore': 7.09, 'sealScore': 18.51, 'relScore': 12.0, 'durMin': 0.0, 'durScore': 0.0, 'spaceScore': 0.0, 'space': {'lbc': 1, 'limitPct': 0.1}, 'openPenalty': 0.0}, 'explosion': {'theme': '锂电池概念', 'hit': True, 'count': 1, 'follow': 0, 'followRatio': 0.0, 'spreadMin': 0.0, 'boost': '一级题材'}, 'lead': {'lagSec': 0, 'themeFirst': '093651'}, 'tags': ['先发', '一级题材'], 'themeBonus': 2.5, 'themeTier': 1}
+
+【结构拆解/证据链】
+- 结构：47分（warn）— 结构有断层：3板缺位，接力不顺。
+- 高度：4板（good）— 高度已打开：具备主线延续的基础，关注承接质量。（较昨+1）
+- 穿透：5.2%（warn）— 穿透较低：主线回撤浅，修复空间更大。
+
+【涨停池（前50，格式 名称|连板|行业|封单|逻辑）】
+盛剑科技|4|环保设备|封单?|
+真视通|4|IT服务Ⅱ|封单?|
+荣联科技|1|IT服务Ⅱ|封单?|
+华微电子|1|半导体|封单?|
+中京电子|2|元件|封单?|
+光华科技|1|电子化学|封单?|
+建业股份|1|化学制品|封单?|
+东晶电子|1|元件|封单?|
+东方海洋|1|农产品加|封单?|
+易天股份|1|消费电子|封单?|
+龙版传媒|1|出版|封单?|
+超声电子|1|元件|封单?|
+冰山冷热|1|通用设备|封单?|
+澳弘电子|1|元件|封单?|
+国光股份|1|农化制品|封单?|
+长华集团|1|汽车零部|封单?|
+万向德农|1|种植业|封单?|
+鼎龙科技|1|化学制品|封单?|
+克来机电|1|汽车零部|封单?|
+风语筑|1|数字媒体|封单?|
+凡拓数创|1|数字媒体|封单?|
+金新农|1|饲料|封单?|
+骏亚科技|1|元件|封单?|
+大东方|1|一般零售|封单?|
+华媒控股|1|广告营销|封单?|
+满坤科技|1|元件|封单?|
+好当家|1|渔业|封单?|
+德龙汇能|1|燃气Ⅱ|封单?|
+
+【接力候选】中京电子
+
+【观察池】真视通、盛剑科技、超声电子、冰山冷热、华微电子、长华集团
+
+【高位风险】触发！最高 4板 / 评分 66 / 等级 warning / 
+
+【规则引擎操作建议（参考）】
+修复在延续，但分歧还在，承接在转强、亏钱效应收敛，但高位承接还不稳。板块上聚焦PCB（6涨停）、裸眼3D（3涨停）。次日只做主线核心回封/换手确认，不追高一致。
+
+【交易心法语录】&gt;如果一位投机家有能力确定某只股票的关键点，并运用关键点来解释股价的波动，就能够有相当把握建立那种从头开始一直盈利的头寸
+
+【龙虎榜/席位数据】
+{"date": "2026-11-20", "source": "东财(免费)", "count": 72, "items": [{"code": "002916", "name": "深南电路", "reason": "连续三个交易日内，涨幅偏离值累计达到20%的证券", "explain": "4家机构卖出，成功率15.05%", "close": 210.0, "change_rate": -0.587, "turnover": 2.9643, "buy": 25.11, "sell": 23.15, "net": 1.96, "board_amount": 107.34, "market": "深交所主板"}, {"code": "002148", "name": "北纬科技", "reason": "连续三个交易日内，涨幅偏离值累计达到20%的证券", "explain": "主力做T，成功率50.75%", "close": 10.06, "change_rate": 8.172, "turnover": 51.9487, "buy": 5.27, "sell": 3.39, "net": 1.87, "board_amount": 60.19, "market": "深交所主板"}, {"code": "600410", "name": "华胜天成", "reason": "有价格涨跌幅限制的日换手率达到20%的前五只证券", "explain": "买一主买，成功率34.56%", "close": 17.32, "change_rate": 3.7126, "turnover": 28.0013, "buy": 3.64, "sell": 3.57, "net": 0.07, "board_amount": 53.7, "market": "上交所主板"}, {"code": "600261", "name": "阳光照明", "reason": "非S证券连续三个交易日内收盘价格跌幅偏离值累计达到20%的证券", "explain": "普通席位卖出，成功率27.01%", "close": 4.16, "change_rate": -9.9567, "turnover": 18.4191, "buy": 2.4, "sell": 3.71, "net": -1.31, "board_amount": 34.94, "market": "上交所主板"}, {"code": "000530", "name": "冰山冷热", "reason": "日换手率达到20%的前5只证券", "explain": "1家机构买入，成功率41.53%", "close": 12.29, "change_rate": 10.0269, "turnover": 42.6427, "buy": 5.3, "sell": 2.32, "net": 2.99, "board_amount": 30.62, "market": "深交所主板"}, {"code": "000530", "name": "冰山冷热", "reason": "日涨幅偏离值达到7%的前5只证券", "explain": "1家机构买入，成功率41.53%", "close": 12.29, "change_rate": 10.0269, "turnover": 42.6427, "buy": 5.3, "sell": 2.32, "net": 2.99, "board_amount": 30.62, "market": "深交所主板"}, {"code": "002425", "name": "凯撒文化", "reason": "连续三个交易日内，跌幅偏离值累计达到20%的证券", "explain": "3家机构卖出，成功率24.71%", "close": 3.39, "change_rate": -10.0796, "turnover": 27.4595, "buy": 3.1, "sell": 3.82, "net": -0.72, "board_amount": 30.13, "market": "深交所主板"}, {"code": "002685", "name": "华东重机", "reason": "日换手率达到20%的前5只证券", "explain": "主力做T，成功率45.04%", "close": 7.4, "change_rate": -3.5202, "turnover": 38.7792, "buy": 2.84, "sell": 2.76, "net": 0.08, "board_amount": 28.57, "ma
+
+================ 你可以基于以上数据向我提问 ================
+（例如：明天哪些方向值得关注？当前情绪处于什么阶段、该进攻还是防守？列出 3-5 只次日可跟踪的标的并说明逻辑。）
+</textarea>
+<script>
+document.getElementById('cp').onclick=async function(){
+  var t=document.getElementById('ta');t.focus();t.select();
+  try{await navigator.clipboard.writeText(t.value);}catch(e){document.execCommand('copy');}
+  var s=document.getElementById('tip');s.textContent='已复制 ✓';setTimeout(function(){s.textContent='';},2000);
+};
+</script>
+</body>
+</html>
